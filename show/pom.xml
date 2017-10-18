@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>com.per</artifactId>
+        <groupId>com.per</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>show</artifactId>
+    <packaging>war</packaging>
+    <name>show Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <profiles>
+        <profile>
+            <id>base</id>
+            <properties>
+                <profileName>base</profileName>
+                <enableSign>true</enableSign>
+                <!--zookeeper -->
+                <redis.config.localpath>redis.properties</redis.config.localpath>
+                <redis.config.is_by_zookeeper_start>false</redis.config.is_by_zookeeper_start>
+                <!-- redis -->
+                <redis.maxTotal>120</redis.maxTotal>
+                <redis.maxIdle>10</redis.maxIdle>
+                <redis.minIdle>1</redis.minIdle>
+                <redis.testOnBorrow>true</redis.testOnBorrow>
+                <redis.maxWaitMillis>1000</redis.maxWaitMillis>
+                <redis.testOnReturn>true</redis.testOnReturn>
+                <redis.testWhileIdle>true</redis.testWhileIdle>
+                <redis.timeBetweenEvictionRunsMillis>30000</redis.timeBetweenEvictionRunsMillis>
+                <redis.minEvictableIdleTimeMillis>30000</redis.minEvictableIdleTimeMillis>
+                <redis.socketTimeout>2000</redis.socketTimeout>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>local</id>
+            <properties>
+                <profileName>local</profileName>
+                <enableSign>false</enableSign>
+                <!-- redis -->
+                <redis.host>127.0.0.1@</redis.host>
+                <redis.port>6379@</redis.port>
+                <redis.name></redis.name>
+                <redis.password></redis.password>
+            </properties>
+        </profile>
+
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.per</groupId>
+            <artifactId>service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.per</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>${javax.servlet.jsp-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        <!-- 这里需要加上scope,在tomcat/common/lib下有Servlet.jar，这里又引入了一个，在Tomcat启动时，先将
+         lib包下的jar导入内存，这里要起冲突，报：javax.servlet-api-3.0.1.jar) - jar not loaded错误；添加
+         scope解决-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>show</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory> <!--指定哪个目录下的文件通过${key}会被替换为属性值} -->
+                <includes>
+                    <include>**/*</include>               <!--指定那个目录下哪个文件 -->
+                </includes>
+                <excludes>
+                    <exclude></exclude>                   <!-- 指定不希望被替换占位符的文件-->
+                </excludes>
+                <filtering>true</filtering>               <!-- 是否过滤前面指定文件中的占位符,并用属性值代替 -->
+            </resource>
+        </resources>
+    </build>
+</project>

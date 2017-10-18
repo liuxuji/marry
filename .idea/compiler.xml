@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base" />
+        <module name="core" />
+        <module name="daoTool" />
+        <module name="redis" />
+        <module name="service" />
+        <module name="show" />
+        <module name="test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="1.7" />
+      <module name="core" target="1.7" />
+      <module name="daoTool" target="1.7" />
+      <module name="marry" target="1.7" />
+      <module name="redis" target="1.7" />
+      <module name="service" target="1.7" />
+      <module name="show" target="1.7" />
+      <module name="test" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
