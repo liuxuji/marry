@@ -3,6 +3,7 @@ package com.per.controller;
 import com.per.dao.ro.FirstRo;
 import com.per.result.JSONResult;
 import com.per.service.test.ITestService;
+import com.per.vo.map.MapLocationInfo;
 import com.per.vo.test.TestVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -67,5 +69,23 @@ public class TestController {
         List<FirstRo> list = iTestService.findAll();
         return new JSONResult(list);
     }
+
+    @RequestMapping("/index")
+    public ModelAndView index(Integer id){
+        if(id != null){
+            if(id == 2){
+                return new ModelAndView("/location/location2");
+            }
+            return new ModelAndView("index1");
+        }
+        return new ModelAndView("index");
+    }
+
+    @RequestMapping("/map")
+    public ModelAndView map(Double lat,Double lon){
+        System.out.println(lat + "," + lon);
+        return new ModelAndView("index1").addObject("map",new MapLocationInfo(lat,lon));
+    }
+
 
 }
