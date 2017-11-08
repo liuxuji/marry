@@ -1,5 +1,6 @@
 package com.per.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.per.dao.ro.FirstRo;
 import com.per.result.JSONResult;
 import com.per.service.test.ITestService;
@@ -85,6 +86,13 @@ public class TestController {
     public ModelAndView map(Double lat,Double lon){
         System.out.println(lat + "," + lon);
         return new ModelAndView("index1").addObject("map",new MapLocationInfo(lat,lon));
+    }
+
+
+    public static void main(String[] args){
+        String msg = "\"adFullArea\":\"{\\\"content\\\":\\\"\\\",\\\"mark\\\":\\\"15458\\\",\\\"sourcePath\\\":\\\"https://1919-new-bbc-pro.oss-cn-beijing.aliyuncs.com/9444b92e-591b-4b13-9065-bdde5eb0577c\\\",\\\"title\\\":\\\"919热销\\\",\\\"url\\\":\\\"https://kuaihe-50.1919.cn/promotion/html/purehtml/414222831923081216.do\\\"}\"";
+        System.out.println(msg);
+        System.out.println(JSONObject.parseObject(msg));
     }
 
 

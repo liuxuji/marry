@@ -16,6 +16,10 @@
             <groupId>com.per</groupId>
             <artifactId>redis</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.per</groupId>
+            <artifactId>base</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

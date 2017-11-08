@@ -19,6 +19,7 @@
         <module>redis</module>
         <module>show</module>
         <module>service</module>
+        <module>backmanagement</module>
     </modules>
 
     <!-- 引入依赖版本,统一管理 -->

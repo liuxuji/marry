@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="backmanagement" />
         <module name="base" />
         <module name="core" />
         <module name="daoTool" />
@@ -16,6 +17,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="backmanagement" target="1.7" />
+      <module name="backnagement" target="1.7" />
       <module name="base" target="1.7" />
       <module name="core" target="1.7" />
       <module name="daoTool" target="1.7" />

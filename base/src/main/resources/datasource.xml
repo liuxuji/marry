@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/data/jpa
+                        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx.xsd"
+                        default-lazy-init="false">
+    
+    <!-- =======================================mysql应用配置========================================= -->
+    <!-- 请在启动应用项加载properties配置文件 -->
+    
+    <!-- 数据源配置-使用阿里巴巴的连接池 -->
+	<bean id="dbDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+
+		<!-- 配置初始化大小、最小、最大 -->
+		<property name="initialSize" value="${jdbc.initialSize}" />
+		<property name="minIdle" value="${jdbc.minIdle}" />
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<!-- 配置获取连接等待超时的时间 -->
+		<property name="maxWait" value="${jdbc.maxWait}" />
+		<!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />
+		<!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+		<property name="minEvictableIdleTimeMillis" value="${jdbc.minEvictableIdleTimeMillis}" />
+
+		<property name="validationQuery" value="SELECT 'x' from dual" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		<property name="poolPreparedStatements" value="${jdbc.poolPreparedStatements}" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="${jdbc.maxPoolPreparedStatementPerConnectionSize}" />
+        <property name="connectionInitSqls">
+            <list>
+                <value>set names 'utf8mb4'</value>
+            </list>
+        </property>
+    </bean>
+	
+	<bean id="persistenceUnitManager" class="org.springframework.data.jpa.support.MergingPersistenceUnitManager ">
+        <property name="persistenceXmlLocations">
+            <list value-type="java.lang.String">
+                <value>classpath*:META-INF/persistence.xml</value>
+            </list>
+        </property>
+        <property name="defaultDataSource" ref="dbDataSource" />
+    </bean>
+         
+    <!-- 定义实体管理器工厂 Jpa配置 LocalContainerEntityManagerFactoryBean这个选项Spring扮演了容器的角色。完全掌管JPA -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dbDataSource" />
+        <property name="packagesToScan">
+            <list>
+				<value>com.**.po</value>
+	            <value>com.per.**.po</value>
+            </list>
+        </property>
+        <property name="persistenceProvider">
+            <bean class="org.hibernate.ejb.HibernatePersistence" />
+        </property>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="generateDdl" value="true" />
+                <property name="database" value="MYSQL" />
+                <property name="databasePlatform" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+            </bean>
+        </property>
+        <property name="jpaDialect">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaDialect" />
+        </property>
+        <property name="jpaProperties">
+            <props>
+               <!--  这个配置能略微加速hibernate连接速度,但会失去自动更新表结构的能力 -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.enable_lazy_load_no_trans">true</prop>
+                <prop key="hibernate.cache.use_query_cache">false</prop>
+                <prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.transaction.flush_before_completion">true</prop>
+                <prop key="hibernate.show_sql">${show_sql}</prop>
+                <!-- 大写字母转下划线加字母 hibernate5.0 -->
+                <prop key="hibernate.physical_naming_strategy">com.biz.support.jpa.util.UnderscoreNameCustomizer</prop>
+            </props>
+        </property>
+    </bean>
+
+	<!-- 重要配置：启用扫描并自动创建代理的功能 -->
+	<jpa:repositories base-package="com.per.**.repository"
+                      transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"
+	factory-class="com.per.support.jpa.repository.CommonRepositoryFactoryBean"/>
+
+
+	<!-- 事件发布器 -->
+	<bean id="eventPublisher" class="com.per.spring.event.PerEventPublisher"/>
+	<!-- 事件广播,配合事件发布器 -->
+	<bean id="applicationEventMulticaster" class="com.per.spring.event.PerEventMulticaster"/>
+	
+	<!-- Jpa 事务管理器 -->
+	<bean id="transactionManager" class="com.per.jpatranaction.PerTranactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+		<property name="eventPublisher" ref="eventPublisher"/>
+	</bean>
+
+	<!-- 开启注解事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager"  proxy-target-class="true" />
+    
+	<!-- =======================================mysql========================================= -->
+    
+</beans>

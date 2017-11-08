@@ -28,6 +28,7 @@
     window.addEventListener('message', function(event) {
         loc = event.data; // 接收位置信息
         console.log('location', loc);
+        console.log(".................." + loc);
 
         if(loc  && loc.module == 'geolocation') { //定位成功,防止其他应用也会向该页面post信息，需判断module是否为'geolocation'
             var markUrl = 'https://apis.map.qq.com/tools/poimarker' +
