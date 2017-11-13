@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/security 
+    http://www.springframework.org/schema/security/spring-security.xsd">
+
+    
+    <http use-expressions="true" auto-config="true">
+        <intercept-url pattern="/madmin/**" access="permitAll"/><!-- access="permitAll" 任何用户均可访问 -->
+        <intercept-url pattern="/images" access="permitAll"/>
+        <intercept-url pattern="/js/**" access="permitAll"/>
+        <intercept-url pattern="/css" access="permitAll"/>
+        <intercept-url pattern="/promotion/html/**" access="permitAll"/>
+        <intercept-url pattern="/promotionshare/html/**" access="permitAll"/>
+        <intercept-url pattern="/product/fileupload/ckediterUpload.do" access="permitAll"/>
+        <intercept-url pattern="/product/fileupload/kindeditorUpload.do" access="permitAll"/>
+        <intercept-url pattern="/old/dist/themes" access="permitAll"/>
+        <intercept-url pattern="/WEB-INF/jsp/error/accessDenied.jsp" access="permitAll"/> 
+        <intercept-url pattern="/welcome.do" access="permitAll" method="GET"/>
+        <intercept-url pattern="/login.do" access="permitAll"/>
+        <!--放行快喝退款api url-->
+        <intercept-url pattern="/bbc2kuaihe/order/**" access="permitAll" />
+        <intercept-url pattern="/www1919debug/**" access="permitAll" />
+
+
+        <!-- 图片上传示例 -->
+        <intercept-url pattern="/imgupload.do" access="permitAll"/>
+        <intercept-url pattern="/imgpicture/*.do" access="permitAll"/>
+        <intercept-url pattern="/imgthumbnail/*.do" access="permitAll"/>
+        <intercept-url pattern="/imgdelete/*.do" access="permitAll"/>
+
+        <intercept-url pattern="/madmin/vendors/editor/ckeditor/plugins/dialog" access="isAuthenticated()"/> <!-- access="isAuthenticated()" 如果用户不是匿名用户就会返回true  -->
+        <intercept-url pattern="/**" access="isAuthenticated()"/>
+
+        <form-login
+               login-page="/welcome.do" 
+	           default-target-url="/console/main.do" 
+	           authentication-failure-url="/welcome.do?error＝1" 
+	           login-processing-url="/j_spring_security_check" 
+	           always-use-default-target="true"
+                />
+
+        <logout logout-url="/j_spring_security_logout" logout-success-url="/welcome.do" invalidate-session="true"/>
+    
+        <anonymous enabled="true"/>
+
+        <session-management>
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>
+        </session-management>
+        
+        <access-denied-handler error-page="/WEB-INF/jsp/error/accessDenied.jsp"/>
+    </http>
+    
+    <beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" />
+	
+    <authentication-manager alias="authenticationManager">
+        <!-- 见AdminServiceImpl -->
+        <authentication-provider user-service-ref="adminServiceImpl">
+            <password-encoder ref="passwordEncoder">
+                <!-- 用户名做为盐值 -->
+                <salt-source user-property="username"/>
+            </password-encoder>
+        </authentication-provider>
+    </authentication-manager>
+
+    <global-method-security pre-post-annotations="enabled" secured-annotations="enabled" jsr250-annotations="enabled" proxy-target-class="true"/>
+</beans:beans>
+

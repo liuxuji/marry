@@ -18,7 +18,8 @@
                 <profileName>base</profileName>
                 <enableSign>true</enableSign>
                 <!--zookeeper -->
-                <redis.config.localpath>redis.properties</redis.config.localpath>
+                <zookeeper.url></zookeeper.url>
+                <redis.config.localpath>/connection/redis.properties</redis.config.localpath>
                 <redis.config.is_by_zookeeper_start>false</redis.config.is_by_zookeeper_start>
                 <!-- redis -->
                 <redis.maxTotal>120</redis.maxTotal>

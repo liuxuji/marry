@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="
+		 http://www.springframework.org/schema/beans
+		 http://www.springframework.org/schema/beans/spring-beans.xsd
+		 http://www.springframework.org/schema/context
+    	 http://www.springframework.org/schema/context/spring-context.xsd
+		 ">
+
+    <!--<context:component-scan base-package="com.biz.support.web.scope.session"/>-->
+
+	<!-- spring启动时扫描项目路径下的properties文件,后续用${key }方式取出对应值,这样可以代码解耦和，后续只需修改properties文件即可 -->
+	<bean id="propertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="order" value="20"/>
+		<property name="locations">
+			<list>
+				<!-- dataSourse连接池 redis message 相关属性，代码不在此贴出，会放在打包好的项目里面 -->
+				<value>classpath:connection/datasource.properties</value>
+				<value>classpath:connection/redis.properties</value>
+				<value>classpath:connection/message.properties</value>
+				<value>classpath:connection/zookeeper.properties</value>
+                <value>classpath:connection/oss_config.properties</value>
+                <value>classpath:connection/kafka.properties</value>
+                <value>classpath:connection/api.properties</value>
+				<!--<bean class="com.bozhi.core.spring.properties.PropertiesResource">-->
+                    <!--<constructor-arg index="0">-->
+                        <!--<bean factory-bean="manageCfgZkProps" factory-method="getProperties"/>-->
+                    <!--</constructor-arg>-->
+                <!--</bean>-->
+			</list>
+		</property>
+	</bean>
+	
+	<!--<bean id="manageCfgZkProps" class="com.bozhi.core.zookeeper.ZkProperties">-->
+        <!--<constructor-arg index="0" value="/bozhi/config/manage_config.properties"/>-->
+    <!--</bean>-->
+
+    <!--<bean class="com.bozhi.core.ali.oss.config.OssConfig">-->
+        <!--<property name="bucketName" value="${oss_config.bucketName}" />-->
+        <!--<property name="accessSecret" value="${oss_config.accessKeySecret}" />-->
+        <!--<property name="accessKeyId" value="${oss_config.accessKeyId}" />-->
+        <!--<property name="localEndpoint" value="${oss_config.local_endpoint}" />-->
+        <!--<property name="remoteEndpoint" value="${oss_config.remote_endpoint}" />-->
+    <!--</bean>-->
+
+    <bean id="localOssClient" class="com.aliyun.oss.OSSClient">
+        <constructor-arg name="endpoint" value="${oss_config.local_endpoint}" />
+        <constructor-arg name="accessKeyId" value="${oss_config.accessKeyId}" />
+        <constructor-arg name="secretAccessKey" value="${oss_config.accessKeySecret}" />
+    </bean>
+
+    <bean id="remoteOssClient" class="com.aliyun.oss.OSSClient">
+        <constructor-arg name="endpoint" value="${oss_config.remote_endpoint}" />
+        <constructor-arg name="accessKeyId" value="${oss_config.accessKeyId}" />
+        <constructor-arg name="secretAccessKey" value="${oss_config.accessKeySecret}" />
+    </bean>
+
+
+    <!-- 激活amqp消息队列配置 -->
+    <!--<bean class="com.bozhi.autoconfig.EnableRabbitMessageService"/>-->
+	
+	<!-- 来自于service的配置文件 -->
+    <import resource="classpath:application-service.xml"/>
+
+	<!--<import resource="classpath:spring/cas-api-provider.xml"/>-->
+    
+    <!-- application-security.xml配置文件 -->
+   	<import resource="classpath:spring/application-security.xml"/>
+
+    <!-- 自定义公共配置加载 -->
+    <!--<bean class="com.biz.bbc.platform.util.ConfigUtil">-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+				<!--<value>classpath:connection/common.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+    
+</beans>

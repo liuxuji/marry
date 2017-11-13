@@ -65,7 +65,8 @@
         </spring-data-jpa.version><!-- springdata-jpa的版本需要和springdata-elasticsearch保持一致，谨慎做版本修改 -->
         <spring-security.version>3.2.5.RELEASE</spring-security.version>
         <spring-rabbit.version>1.5.5.RELEASE</spring-rabbit.version>
-
+        <spring-data-redis.version>1.7.4.RELEASE</spring-data-redis.version>
+        <spring-session.version>1.2.2.RELEASE</spring-session.version>
         <!--hibernate -->
         <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
         <el.version>2.2.4</el.version>

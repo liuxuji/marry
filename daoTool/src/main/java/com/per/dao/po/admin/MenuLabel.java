@@ -1,4 +1,4 @@
-package com.per.dao.po.user;
+package com.per.dao.po.admin;
 
 import java.io.Serializable;
 

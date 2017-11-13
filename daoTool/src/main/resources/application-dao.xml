@@ -9,9 +9,11 @@
   <!-- 引入cache配置 -->
   <import resource="classpath:redis.xml"/>
   
-  <context:component-scan base-package="com.redis,com.per.dao.respository"/>
-  
   <!-- 引入datasource配置 -->
-  <!--<import resource="classpath:datasource.xml"/>-->
-  
+  <import resource="classpath:datasource.xml"/>
+
+  <context:component-scan base-package="com.redis,com.per.dao.respository"/>
+  <context:component-scan base-package="com.per.dao.po"/>
+  <context:component-scan base-package="com.per.dao.ro"/>
+
 </beans>

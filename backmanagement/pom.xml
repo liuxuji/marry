@@ -8,8 +8,10 @@
         <version>${project.version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>backmanagement</artifactId>
+    <packaging>war</packaging>
+    <name>backmanagement Maven Webapp</name>
+    <url>http://maven.apache.org</url>
 
     <profiles>
         <profile>
@@ -18,7 +20,8 @@
                 <profileName>base</profileName>
                 <enableSign>true</enableSign>
                 <!--zookeeper -->
-                <redis.config.localpath>redis.properties</redis.config.localpath>
+                <zookeeper.url></zookeeper.url>
+                <redis.config.localpath>/connection/redis.properties</redis.config.localpath>
                 <redis.config.is_by_zookeeper_start>false</redis.config.is_by_zookeeper_start>
                 <!-- redis -->
                 <redis.maxTotal>120</redis.maxTotal>
@@ -31,6 +34,16 @@
                 <redis.timeBetweenEvictionRunsMillis>30000</redis.timeBetweenEvictionRunsMillis>
                 <redis.minEvictableIdleTimeMillis>30000</redis.minEvictableIdleTimeMillis>
                 <redis.socketTimeout>2000</redis.socketTimeout>
+                <!-- jdbc -->
+                <jdbc.initialSize>2</jdbc.initialSize>
+                <jdbc.minIdle>2</jdbc.minIdle>
+                <jdbc.maxActive>10</jdbc.maxActive>
+                <jdbc.maxWait>60000</jdbc.maxWait>
+                <jdbc.timeBetweenEvictionRunsMillis>60000</jdbc.timeBetweenEvictionRunsMillis>
+                <jdbc.minEvictableIdleTimeMillis>300000</jdbc.minEvictableIdleTimeMillis>
+                <jdbc.poolPreparedStatements>true</jdbc.poolPreparedStatements>
+                <jdbc.maxPoolPreparedStatementPerConnectionSize>30
+                </jdbc.maxPoolPreparedStatementPerConnectionSize>
             </properties>
         </profile>
 
@@ -44,9 +57,39 @@
                 <redis.port>6379@</redis.port>
                 <redis.name></redis.name>
                 <redis.password></redis.password>
+                <redis.session.host>127.0.0.1@</redis.session.host>
+                <redis.session.port>6379@</redis.session.port>
+                <redis.session.password></redis.session.password>
             </properties>
         </profile>
-
+        <profile>
+            <id>aliself</id>
+            <properties>
+                <profileName>aliself</profileName>
+                <enableSign>false</enableSign>
+                <!-- redis-->
+                <redis.host>r-2ze2e9393cda3bb4.redis.rds.aliyuncs.com@</redis.host>
+                <redis.port>6379@</redis.port>
+                <redis.name></redis.name>
+                <redis.password>XXB19890501lxj</redis.password>
+                <redis.session.host>r-2ze2e9393cda3bb4.redis.rds.aliyuncs.com@</redis.session.host>
+                <redis.session.port>6379@</redis.session.port>
+                <redis.session.password>XXB19890501lxj</redis.session.password>
+                <!-- mysql -->
+                <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
+                <jdbc.url>jdbc:mysql://rm-wz94yc300a330sam5o.mysql.rds.aliyuncs.com:3306/marry?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</jdbc.url>
+                <jdbc.username>root</jdbc.username>
+                <jdbc.password>WwwXiaoBoWriteMarryPro**</jdbc.password>
+                <show_sql>true</show_sql>
+                <enable.smscode.test>true</enable.smscode.test>
+                <!-- oss-->
+                <oss_config.remote_endpoint>oss-cn-beijing.aliyuncs.com</oss_config.remote_endpoint>
+                <oss_config.local_endpoint>oss-cn-beijing-internal.aliyuncs.com</oss_config.local_endpoint>
+                <oss_config.accessKeyId>LTAIK2hRIQcKMXKK</oss_config.accessKeyId>
+                <oss_config.accessKeySecret>7y9MufvKxd3zsrFyTKZDzFKYr18xZj</oss_config.accessKeySecret>
+                <oss_config.bucketName>xxb-1989</oss_config.bucketName>
+            </properties>
+        </profile>
     </profiles>
 
     <dependencies>
@@ -113,6 +156,16 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
             <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-data-redis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+            <version>${spring-session.version}</version>
         </dependency>
     </dependencies>
 

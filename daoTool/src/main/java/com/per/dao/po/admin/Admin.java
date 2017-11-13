@@ -1,4 +1,4 @@
-package com.per.dao.po.user;
+package com.per.dao.po.admin;
 
 import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.common.utils.StringUtils;
@@ -80,7 +80,7 @@ public class Admin implements UserDetails{
      */
     @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(name = "adm_admin_role",
-            joinColumns = { @JoinColumn(name = "admin_username", referencedColumnName = "username") },
+            joinColumns = { @JoinColumn(name = "admin_username", referencedColumnName = "userLoginName") },
             inverseJoinColumns = { @JoinColumn(name = "role_id", referencedColumnName = "id") },
             uniqueConstraints = { @UniqueConstraint(columnNames = { "admin_username", "role_id" }) })
     private List<Role> roles;
@@ -135,6 +135,14 @@ public class Admin implements UserDetails{
                 set.add(new AdminAuthority(symbol));
             }
         }
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 
     @Override
@@ -334,5 +342,17 @@ public class Admin implements UserDetails{
 
     public void setMenus(List<Menu> menus) {
         this.menus = menus;
+    }
+
+    public void copy(Admin admin) {
+        this.enabled = admin.isEnabled();
+        this.name = admin.getName();
+        this.email = admin.getEmail();
+        this.mobile = admin.getMobile();
+        this.permitIP = admin.getPermitIP();
+        this.msn = admin.getMsn();
+        this.qq = admin.getQq();
+        this.channelId = admin.getChannelId();
+        this.portrait = admin.getPortrait();
     }
 }

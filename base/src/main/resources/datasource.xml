@@ -87,7 +87,7 @@
                 <prop key="hibernate.transaction.flush_before_completion">true</prop>
                 <prop key="hibernate.show_sql">${show_sql}</prop>
                 <!-- 大写字母转下划线加字母 hibernate5.0 -->
-                <prop key="hibernate.physical_naming_strategy">com.biz.support.jpa.util.UnderscoreNameCustomizer</prop>
+                <prop key="hibernate.physical_naming_strategy">com.per.support.jpa.util.UnderscoreNameCustomizer</prop>
             </props>
         </property>
     </bean>
