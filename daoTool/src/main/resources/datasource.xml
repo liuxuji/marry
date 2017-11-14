@@ -60,8 +60,7 @@
         <property name="dataSource" ref="dbDataSource" />
         <property name="packagesToScan">
             <list>
-				<value>com.**.po</value>
-	            <value>com.per.**.po</value>
+	            <value>com.per.dao.po</value>
             </list>
         </property>
         <property name="persistenceProvider">
@@ -93,7 +92,7 @@
     </bean>
 
 	<!-- 重要配置：启用扫描并自动创建代理的功能 -->
-	<jpa:repositories base-package="com.per.**.repository"
+	<jpa:repositories base-package="com.per.dao.respository"
                       transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"
 	factory-class="com.per.support.jpa.repository.CommonRepositoryFactoryBean"/>
 

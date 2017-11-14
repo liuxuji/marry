@@ -17,28 +17,27 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
         
     <!-- 配置Druid和Spring关联监控配置 -->
-    <bean id="druid-stat-interceptor" class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor" />
-    
-    <bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut"
-        scope="prototype">
-        <property name="patterns">
-            <list>
-                <value>com.biz.bbc.*</value>
-            </list>
-        </property>
-    </bean>
-    
-    <aop:config>
-        <aop:advisor advice-ref="druid-stat-interceptor"
-            pointcut-ref="druid-stat-pointcut" />
-    </aop:config>
+    <!--<bean id="druid-stat-interceptor" class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor" />-->
+    <!---->
+    <!--<bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut"-->
+        <!--scope="prototype">-->
+        <!--<property name="patterns">-->
+            <!--<list>-->
+                <!--<value>com.per.*</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!---->
+    <!--<aop:config>-->
+        <!--<aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut" />-->
+    <!--</aop:config>-->
     
     <!-- 扫描配置 -->
 	<context:annotation-config/>
     <context:component-scan base-package="com.per.controller"/>
     
  	<!-- 因为 _old_controller 是在此文件中注册,所以需要这里也写 -->
-    <security:global-method-security pre-post-annotations="enabled" secured-annotations="enabled" jsr250-annotations="enabled" proxy-target-class="true"/>
+    <!--<security:global-method-security pre-post-annotations="enabled" secured-annotations="enabled" jsr250-annotations="enabled" proxy-target-class="true"/>-->
          
 	<!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
     <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -50,11 +49,10 @@
     </bean>
 	
 	<!-- mulitipart -->
- 	<bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="defaultEncoding" value="UTF-8" />
-		<property name="maxUploadSize" value="10485760" />
-	</bean>
+ 	<!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+		<!--<property name="defaultEncoding" value="UTF-8" />-->
+		<!--<property name="maxUploadSize" value="10485760" />-->
+	<!--</bean>-->
 
 	<!--<mvc:interceptors>-->
 		<!--<mvc:interceptor>-->
@@ -82,8 +80,7 @@
 					</list>
 				</property>
 			</bean>
-			<bean
-				class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
 				<property name="supportedMediaTypes">
 					<list>
 						<value>application/json; charset=UTF-8</value>

@@ -36,8 +36,8 @@ public class AdminController extends BaseController{
     @Autowired
     private AdminService adminService;
 
-    @Autowired
-    @Qualifier("passwordEncoder")
+    @Autowired(required = false)
+//    @Qualifier("passwordEncoder")
     private Md5PasswordEncoder passwordEncoder;
 
     @RequestMapping("/list")

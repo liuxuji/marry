@@ -73,6 +73,7 @@ public class JedisCurdCommonRedisDao <T extends BaseRedisObject<ID>,ID extends S
      *  简而言之就是获得超类的泛型参数的实际类型。。*/
     public JedisCurdCommonRedisDao(){
         super();
+        logger.info("JedisCurdCommonRedisDao加载开始...");
         entityClass = (Class<T>) ((ParameterizedType) this.getClass().getGenericSuperclass()).getActualTypeArguments()[0];
         if(entityClass == null){
             throw new RuntimeException("Can not give the entityClass...");
