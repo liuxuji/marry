@@ -357,7 +357,6 @@ public class AdminServiceImpl extends AbstractBaseService implements AdminServic
         return admin;
     }
 
-
     public void setUserCache(UserCache userCache) {
         this.userCache = userCache;
     }
