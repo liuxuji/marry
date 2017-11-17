@@ -1,4 +1,4 @@
-package com.per.dao.respository.admin;
+package com.per.dao.respository.po.admin;
 
 import com.per.dao.po.admin.MainMenu;
 import com.per.support.jpa.repository.CommonJpaRepository;

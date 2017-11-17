@@ -41,6 +41,13 @@ public class JSONResult {
         this.object = object;
     }
 
+    public static JSONResult errorResult(String message){
+        JSONResult jsonResult = new JSONResult();
+        jsonResult.setCode(FAIL_CODE);
+        jsonResult.setMessage(message);
+        return jsonResult;
+    }
+
     public int getCode() {
         return code;
     }

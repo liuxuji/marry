@@ -168,6 +168,7 @@ public class ShardedJedisCurdCommonRedisDao<T extends BaseRedisObject<ID>,ID ext
         return stringBuffer.toString();
     }
 
+
     /**
      * 实例化
      * @return

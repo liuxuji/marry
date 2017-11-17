@@ -15,6 +15,7 @@
     #editMenu , #deleteMenu , #detailMenu:visited{color:#efefef!important;}
     #editMenu , #deleteMenu , #detailMenu:link{color:#efefef!important;}
 </style>
+<script src="${webroot}/js/jquery.js"></script>
 <script>
     //删除主菜单
     function deleteMenu(id){

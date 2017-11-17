@@ -85,8 +85,8 @@
                 <!-- oss-->
                 <oss_config.remote_endpoint>oss-cn-beijing.aliyuncs.com</oss_config.remote_endpoint>
                 <oss_config.local_endpoint>oss-cn-beijing-internal.aliyuncs.com</oss_config.local_endpoint>
-                <oss_config.accessKeyId>LTAIK2hRIQcKMXKK</oss_config.accessKeyId>
-                <oss_config.accessKeySecret>7y9MufvKxd3zsrFyTKZDzFKYr18xZj</oss_config.accessKeySecret>
+                <oss_config.accessKeyId>LTAIrFCfLHIJEnKC</oss_config.accessKeyId>
+                <oss_config.accessKeySecret>0CSWTMv1XcOx6rhS7tyHYTkm6wugn3</oss_config.accessKeySecret>
                 <oss_config.bucketName>xxb-1989</oss_config.bucketName>
             </properties>
         </profile>
@@ -181,6 +181,11 @@
             <groupId>com.aliyun.oss</groupId>
             <artifactId>aliyun-sdk-oss</artifactId>
             <version>${aliyun-oss.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.coobird</groupId>
+            <artifactId>thumbnailator</artifactId>
+            <version>${net.coobird.version}</version>
         </dependency>
     </dependencies>
 

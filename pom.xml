@@ -105,6 +105,8 @@
         <!-- dubbo -->
         <dubbo.version>2.8.4</dubbo.version>
 
+        <!-- 图片缩放工具 -->
+        <net.coobird.version>0.4.8</net.coobird.version>
         <!-- addition(附加) -->
         <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
         <tomcat-catalina.version>7.0.55</tomcat-catalina.version>

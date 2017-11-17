@@ -38,25 +38,25 @@
         <!--<constructor-arg index="0" value="/bozhi/config/manage_config.properties"/>-->
     <!--</bean>-->
 
-    <!--<bean class="com.bozhi.core.ali.oss.config.OssConfig">-->
-        <!--<property name="bucketName" value="${oss_config.bucketName}" />-->
-        <!--<property name="accessSecret" value="${oss_config.accessKeySecret}" />-->
-        <!--<property name="accessKeyId" value="${oss_config.accessKeyId}" />-->
-        <!--<property name="localEndpoint" value="${oss_config.local_endpoint}" />-->
-        <!--<property name="remoteEndpoint" value="${oss_config.remote_endpoint}" />-->
-    <!--</bean>-->
+    <bean class="com.per.oss.OssConfig">
+        <property name="bucketName" value="${oss_config.bucketName}" />
+        <property name="accessSecret" value="${oss_config.accessKeySecret}" />
+        <property name="accessKeyId" value="${oss_config.accessKeyId}" />
+        <property name="localEndpoint" value="${oss_config.local_endpoint}" />
+        <property name="remoteEndpoint" value="${oss_config.remote_endpoint}" />
+    </bean>
 
-    <!--<bean id="localOssClient" class="com.aliyun.oss.OSSClient">-->
-        <!--<constructor-arg name="endpoint" value="${oss_config.local_endpoint}" />-->
-        <!--<constructor-arg name="accessKeyId" value="${oss_config.accessKeyId}" />-->
-        <!--<constructor-arg name="secretAccessKey" value="${oss_config.accessKeySecret}" />-->
-    <!--</bean>-->
+    <bean id="localOssClient" class="com.aliyun.oss.OSSClient">
+        <constructor-arg name="endpoint" value="${oss_config.local_endpoint}" />
+        <constructor-arg name="accessKeyId" value="${oss_config.accessKeyId}" />
+        <constructor-arg name="secretAccessKey" value="${oss_config.accessKeySecret}" />
+    </bean>
 
-    <!--<bean id="remoteOssClient" class="com.aliyun.oss.OSSClient">-->
-        <!--<constructor-arg name="endpoint" value="${oss_config.remote_endpoint}" />-->
-        <!--<constructor-arg name="accessKeyId" value="${oss_config.accessKeyId}" />-->
-        <!--<constructor-arg name="secretAccessKey" value="${oss_config.accessKeySecret}" />-->
-    <!--</bean>-->
+    <bean id="remoteOssClient" class="com.aliyun.oss.OSSClient">
+        <constructor-arg name="endpoint" value="${oss_config.remote_endpoint}" />
+        <constructor-arg name="accessKeyId" value="${oss_config.accessKeyId}" />
+        <constructor-arg name="secretAccessKey" value="${oss_config.accessKeySecret}" />
+    </bean>
 
 
     <!-- 激活amqp消息队列配置 -->
