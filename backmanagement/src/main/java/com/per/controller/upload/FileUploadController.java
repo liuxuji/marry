@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -36,6 +37,7 @@ public class FileUploadController extends BaseController{
 
     /** 上传图片方法 */
     @RequestMapping("/upload")
+    @ResponseBody
     private JSONResult upload(MultipartFile file, HttpServletRequest request){
         if(file == null){
             return JSONResult.errorResult("文件不能为null");
@@ -54,6 +56,7 @@ public class FileUploadController extends BaseController{
         try{
             OssUtil.putObject(ossClient,putObjectRequest);
             String url = OssUtil.getOssResourceUri(ossConfig.getBucketName(),ossConfig.getRemoteEndpoint(),key);
+            System.out.println("url:" + url);
             return new JSONResult(url);
         }catch (Exception e){
             e.printStackTrace();

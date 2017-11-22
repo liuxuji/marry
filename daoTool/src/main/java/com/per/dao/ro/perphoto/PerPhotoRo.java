@@ -12,7 +12,7 @@ import com.redis.bean.BaseRedisObject;
  * @Date 2017-11-16  11:07
  */
 @Ro(key = "per:photo")
-public class PerPhotoRo extends BaseRedisObject<Integer>{
+public class PerPhotoRo extends BaseRedisObject<Long>{
     /** 用户id，加上下面这个注解后，会在ro队列中生成一个 以userId结尾的 key，方便统计每个用户的 邀请函个数 */
     @FieldSortedSet(key = "userId")
     private Long userId;

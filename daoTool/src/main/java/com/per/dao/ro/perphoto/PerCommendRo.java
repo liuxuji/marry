@@ -11,7 +11,7 @@ import com.redis.bean.BaseRedisObject;
  * @Date 2017-11-16  14:05
  */
 @Ro(key = "per:commend")
-public class PerCommendRo extends BaseRedisObject<Integer>{
+public class PerCommendRo extends BaseRedisObject<Long>{
     /** 用户id*/
     @FieldSortedSet(key = "userId")
     private String userId;

@@ -52,6 +52,8 @@ public class ConfigUtils {
         return getZookeeperUrl() != null;
     }
 
-
+    public static String getString(String propertyFileName, String propertyName) {
+        return getConfig(propertyFileName).getString(propertyName);
+    }
 
 }

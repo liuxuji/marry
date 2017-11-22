@@ -21,13 +21,10 @@
         <intercept-url pattern="/WEB-INF/jsp/error/accessDenied.jsp" access="permitAll"/> 
         <intercept-url pattern="/welcome.do" access="permitAll" method="GET"/>
         <intercept-url pattern="/login.do" access="permitAll"/>
-        <!--放行快喝退款api url-->
-        <intercept-url pattern="/bbc2kuaihe/order/**" access="permitAll" />
-        <intercept-url pattern="/www1919debug/**" access="permitAll" />
 
 
         <!-- 图片上传示例 -->
-        <intercept-url pattern="/imgupload.do" access="permitAll"/>
+        <intercept-url pattern="/fileupload/upload.do" access="permitAll"/>
         <intercept-url pattern="/imgpicture/*.do" access="permitAll"/>
         <intercept-url pattern="/imgthumbnail/*.do" access="permitAll"/>
         <intercept-url pattern="/imgdelete/*.do" access="permitAll"/>

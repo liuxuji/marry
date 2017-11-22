@@ -1,6 +1,6 @@
 package com.per.dao.po.perphoto;
 
-import com.per.support.jpa.po.BaseEntityPKIncrment;
+import com.per.support.jpa.po.BaseEntity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "per_comment")
-public class PerComment extends BaseEntityPKIncrment{
+public class PerComment extends BaseEntity{
     /** 用户id*/
     private String userId;
     /**评论内容 */

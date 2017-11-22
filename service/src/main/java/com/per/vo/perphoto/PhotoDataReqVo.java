@@ -14,22 +14,22 @@ public class PhotoDataReqVo implements Serializable{
     /** 用户id*/
     private Integer userId;
     /** id */
-    private Integer id;
+    private Long id;
     /** 是请柬、照片、评论枚举*/
     private PhotoDataType type;
     /** 分页页数*/
-    private int page;
+    private int pageIndex;
     /** 分页每页数量,默认10 */
     private int pageSize = 10;
 
     public PhotoDataReqVo() {
     }
 
-    public PhotoDataReqVo(Integer userId, Integer id, PhotoDataType type, int page, int pageSize) {
+    public PhotoDataReqVo(Integer userId, Long id, PhotoDataType type, int pageIndex, int pageSize) {
         this.userId = userId;
         this.id = id;
         this.type = type;
-        this.page = page;
+        this.pageIndex = pageIndex;
         this.pageSize = pageSize;
     }
 
@@ -41,11 +41,11 @@ public class PhotoDataReqVo implements Serializable{
         this.userId = userId;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -57,12 +57,12 @@ public class PhotoDataReqVo implements Serializable{
         this.type = type;
     }
 
-    public int getPage() {
-        return page;
+    public int getPageIndex() {
+        return pageIndex;
     }
 
-    public void setPage(int page) {
-        this.page = page;
+    public void setPageIndex(int pageIndex) {
+        this.pageIndex = pageIndex;
     }
 
     public int getPageSize() {

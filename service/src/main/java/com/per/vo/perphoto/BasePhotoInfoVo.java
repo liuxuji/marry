@@ -1,9 +1,7 @@
 package com.per.vo.perphoto;
 
-import com.per.dao.po.perphoto.PerComment;
-import com.per.dao.po.perphoto.PerPhoto;
+import com.per.dao.ro.perphoto.BasePhotoInfoRo;
 
-import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -14,7 +12,7 @@ import java.util.List;
  * @Date 2017-11-16  15:41
  */
 public class BasePhotoInfoVo {
-    private Integer id;
+    private Long id;
     private Timestamp createTimestamp;
     /**归属于请柬的id */
     private Integer photoId;
@@ -33,7 +31,19 @@ public class BasePhotoInfoVo {
     /** 评论*/
     private List<PerCommendVo> perCommentList;
 
-    public BasePhotoInfoVo(Integer id, Timestamp createTimestamp, Integer photoId, String photoPath, String descs, Long size, String categroy, int commendNums, int badNums, List<PerCommendVo> perCommentList) {
+    public BasePhotoInfoVo(BasePhotoInfoRo ro){
+        this.id = ro.getId();
+        this.createTimestamp = ro.getCreateTimestamp();
+        this.photoId = ro.getPerPhotoRoId();
+        this.photoPath = ro.getPhotoPath();
+        this.descs = ro.getDesc();
+        this.size = ro.getSize();
+        this.categroy = ro.getCategroy();
+        this.commendNums = ro.getCommendNums();
+        this.badNums = ro.getBadNums();
+    }
+
+    public BasePhotoInfoVo(Long id, Timestamp createTimestamp, Integer photoId, String photoPath, String descs, Long size, String categroy, int commendNums, int badNums, List<PerCommendVo> perCommentList) {
         this.id = id;
         this.createTimestamp = createTimestamp;
         this.photoId = photoId;
@@ -49,11 +59,11 @@ public class BasePhotoInfoVo {
     public BasePhotoInfoVo() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

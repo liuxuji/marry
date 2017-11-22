@@ -52,6 +52,17 @@ public class ShardedJedisRedis implements ComJedisRedis<ShardedJedis> {
     }
 
     @Override
+    public Long hdel(String key,String... field){
+        ShardedJedis jedis = null;
+        try{
+            jedis = shardedJedisPool.getResource();
+            return jedis.hdel(key,field);
+        }finally {
+            shardedJedisPool.returnResource(jedis);
+        }
+    }
+
+    @Override
     public long hset(String key, String field, byte[] value) {
         ShardedJedis jedis = null;
         try{

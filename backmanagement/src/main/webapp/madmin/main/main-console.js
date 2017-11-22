@@ -2,7 +2,6 @@ $(function() {
 	pageLoaded();
 	// makeSessionNeverExpired();
 });
-
 function pageLoaded()
 {
 	var url = window.location.href;
@@ -82,12 +81,12 @@ function menuLoad(url)
 {
 	var tempUrl = url;
 	if(url == "dashboard.do"){
-		tempUrl = webroot + "/console/" + url;
+		tempUrl = "/console/" + url;
 	} else {
 		if(url.indexOf("https:") == 0 || url.indexOf("http:") == 0){//包含有
 			tempUrl = url;
 		} else if (url.indexOf("https:") == -1 || url.indexOf("http:") == -1){//不包含
-			tempUrl = webroot + url;
+			tempUrl = url;
 		}
 	}
 	$.ajax({
@@ -105,7 +104,7 @@ function menuLoad(url)
 			}
 			if(xmlHttp.status == 401)
 			{
-				window.location.href = webroot + "/";
+				window.location.href = "/";
 			}
 			else
 			{ 

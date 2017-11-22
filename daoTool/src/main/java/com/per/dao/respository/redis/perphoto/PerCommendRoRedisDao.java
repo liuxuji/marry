@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
  * @Date 2017-11-16  14:58
  */
 @Repository
-public class PerCommendRoRedisDao extends ShardedJedisCurdCommonRedisDao<PerCommendRo,Integer>{
+public class PerCommendRoRedisDao extends ShardedJedisCurdCommonRedisDao<PerCommendRo,Long>{
 }

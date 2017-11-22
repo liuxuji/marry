@@ -4,5 +4,5 @@
 <div id="footer">
 	<div class="copyright">
 	<fmt:formatDate value="${now}" type="both" dateStyle="long" pattern="yyyy" />
-	&copy; bizunited - BBC Platform manage v1.0</div>
+	&copy; xxbunited - Marry Platform manage v1.0</div>
 </div>

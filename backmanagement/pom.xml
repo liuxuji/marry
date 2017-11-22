@@ -187,6 +187,11 @@
             <artifactId>thumbnailator</artifactId>
             <version>${net.coobird.version}</version>
         </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons-fileupload.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

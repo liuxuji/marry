@@ -48,11 +48,12 @@
 		<!--<property name="redirectHttp10Compatible" value="false"/>-->
     </bean>
 	
-	<!-- mulitipart -->
- 	<!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
-		<!--<property name="defaultEncoding" value="UTF-8" />-->
-		<!--<property name="maxUploadSize" value="10485760" />-->
-	<!--</bean>-->
+	<!-- mulitipart.处理图片上传的类,这个类的id只能取这个名;之前没有配commons-fileupload这个jar包,一配这个bena就启动不了 -->
+ 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="maxUploadSize" value="10485760" />
+		<property name="resolveLazily" value="true"/>
+	</bean>
 
 	<!--<mvc:interceptors>-->
 		<!--<mvc:interceptor>-->

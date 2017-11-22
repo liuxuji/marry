@@ -1,7 +1,8 @@
 package com.per.dao.po.perphoto;
 
 import com.per.dao.enums.perphoto.ModelType;
-import com.per.support.jpa.po.BaseEntityPKIncrment;
+import com.per.dao.ro.perphoto.PerPhotoRo;
+import com.per.support.jpa.po.BaseEntity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 @Table(name = "per_photo")
 @Entity
-public class PerPhoto extends BaseEntityPKIncrment{
+public class PerPhoto extends BaseEntity{
     /** 图片地址*/
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "photo")
     @Column(name = "photo_infos")
@@ -29,11 +30,22 @@ public class PerPhoto extends BaseEntityPKIncrment{
     /** 模版编号*/
     private Integer modelNo;
     /** 用户id*/
-    private Integer userId;
+    private Long userId;
     /** 能来人数*/
     private Integer canComeNum;
 
-    public PerPhoto(List<BasePhotoInfo> photoInfos, String musicPath, String invotationNo, ModelType type,Integer modelNo,Integer userId,Integer canComeNum) {
+    public PerPhoto(PerPhotoRo ro){
+        this.setId(ro.getId());
+        this.setCreateTime(ro.getCreateTimestamp());
+        this.musicPath = ro.getMusicPath();
+        this.invotationNo = ro.getInvotationNo();
+        this.type = ro.getType();
+        this.modelNo = ro.getModelNo();
+        this.userId = ro.getUserId();
+        this.canComeNum = ro.getCanComeNum();
+    }
+
+    public PerPhoto(List<BasePhotoInfo> photoInfos, String musicPath, String invotationNo, ModelType type,Integer modelNo,Long userId,Integer canComeNum) {
         this.photoInfos = photoInfos;
         this.musicPath = musicPath;
         this.invotationNo = invotationNo;
@@ -51,11 +63,11 @@ public class PerPhoto extends BaseEntityPKIncrment{
         this.canComeNum = canComeNum;
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

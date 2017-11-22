@@ -40,7 +40,7 @@ public abstract class BaseRedisObject<ID extends Serializable> extends BaseRo im
     private ID id;
 
     private Timestamp createTimestamp = DateUtil.now();
-    private Timestamp updateTimestamp;
+    private Timestamp updateTimestamp = DateUtil.now();
 
     static {
         supportedClass.add(Integer.class);

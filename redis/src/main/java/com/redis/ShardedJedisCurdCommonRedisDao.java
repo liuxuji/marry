@@ -345,6 +345,8 @@ public class ShardedJedisCurdCommonRedisDao<T extends BaseRedisObject<ID>,ID ext
                             logger.error("ro.fromMap", e);
                         }
                         result.add(ro);
+                    }else{
+                        result.add(null);
                     }
                 }
             }
@@ -352,6 +354,15 @@ public class ShardedJedisCurdCommonRedisDao<T extends BaseRedisObject<ID>,ID ext
         return result;
     }
 
+    public List<T> findByIdsWithNull(List<ID> ids) {
+        if (ids == null || !ids.iterator().hasNext())
+            return newArrayList();
+        List<String> keys = new ArrayList<String>();
+        for (ID id : ids) {
+            keys.add(getHashKey(id));
+        }
+        return findByKeys(keys);
+    }
 
     public String getKeyPrefix() {
         return keyPrefix.toString();

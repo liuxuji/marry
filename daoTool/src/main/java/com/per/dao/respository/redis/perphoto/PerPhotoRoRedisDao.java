@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
  * @Date 2017-11-16  14:11
  */
 @Repository
-public class PerPhotoRoRedisDao extends ShardedJedisCurdCommonRedisDao<PerPhotoRo,Integer>{
+public class PerPhotoRoRedisDao extends ShardedJedisCurdCommonRedisDao<PerPhotoRo,Long>{
 
     private static final String USER_ID = "userId";
 
@@ -29,6 +29,9 @@ public class PerPhotoRoRedisDao extends ShardedJedisCurdCommonRedisDao<PerPhotoR
         return photoUserKey;
     }
 
-
+    public Long delete(String[] longs){
+        String key = getKeyPrefix();
+        return hdel(key,longs);
+    }
 
 }

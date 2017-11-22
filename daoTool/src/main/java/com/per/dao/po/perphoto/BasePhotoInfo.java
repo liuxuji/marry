@@ -1,6 +1,7 @@
 package com.per.dao.po.perphoto;
 
-import com.per.support.jpa.po.BaseEntityPKIncrment;
+import com.per.dao.ro.perphoto.BasePhotoInfoRo;
+import com.per.support.jpa.po.BaseEntity;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "base_photo_info")
-public class BasePhotoInfo extends BaseEntityPKIncrment{
+public class BasePhotoInfo extends BaseEntity{
     /** 图片路径*/
     private String photoPath;
     /** 描述*/
@@ -36,6 +37,18 @@ public class BasePhotoInfo extends BaseEntityPKIncrment{
 
     @ManyToOne
     private PerPhoto photo;
+
+    public BasePhotoInfo(BasePhotoInfoRo ro,PerPhoto photo){
+        this.photo = photo;
+        this.setId(ro.getId());
+        this.setCreateTime(ro.getCreateTimestamp());
+        this.photoPath = ro.getPhotoPath();
+        this.size = ro.getSize();
+        this.categroy = ro.getCategroy();
+        this.commendNums = ro.getCommendNums();
+        this.badNums = ro.getBadNums();
+        this.descs = ro.getDesc();
+    }
 
 
     public BasePhotoInfo(String photoPath, String descs, Long size, String categroy, int commendNums, int badNums, List<PerComment> perCommentList, PerPhoto photo) {

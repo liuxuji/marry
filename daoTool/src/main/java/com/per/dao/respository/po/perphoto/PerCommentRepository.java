@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
  * @Date 2017-11-16  14:17
  */
 @Repository
-public interface PerCommentRepository extends CommonJpaRepository<PerComment,Integer>{
+public interface PerCommentRepository extends CommonJpaRepository<PerComment,Long>{
 }

@@ -4,6 +4,8 @@ import com.per.dao.ro.perphoto.BasePhotoInfoRo;
 import com.redis.ShardedJedisCurdCommonRedisDao;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created this file:
  *
@@ -11,5 +13,10 @@ import org.springframework.stereotype.Repository;
  * @Date 2017-11-16  14:57
  */
 @Repository
-public class BasePhotoInfoRoRedisDao extends ShardedJedisCurdCommonRedisDao<BasePhotoInfoRo,Integer>{
+public class BasePhotoInfoRoRedisDao extends ShardedJedisCurdCommonRedisDao<BasePhotoInfoRo,Long>{
+
+    public List<BasePhotoInfoRo> findByIds(List<Long> longs){
+        return this.findByIdsWithNull(longs);
+    }
+
 }

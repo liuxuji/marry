@@ -10,7 +10,7 @@ import com.redis.bean.BaseRedisObject;
  * @Date 2017-11-16  11:12
  */
 @Ro(key = "base:photo:info")
-public class BasePhotoInfoRo extends BaseRedisObject<Integer>{
+public class BasePhotoInfoRo extends BaseRedisObject<Long>{
     /** 图片路径*/
     private String photoPath;
     /** 描述*/
@@ -24,11 +24,11 @@ public class BasePhotoInfoRo extends BaseRedisObject<Integer>{
     /** 差评数*/
     private int badNums;
     /** PerPhotoRo的id*/
-    private Integer perPhotoRoId;
+    private Long perPhotoRoId;
     /** 评论id,以 , 分割*/
     private String commentIds;
 
-    public BasePhotoInfoRo(String photoPath, String desc, Long size, String categroy, int commendNums, int badNums, Integer perPhotoRoId, String commentIds) {
+    public BasePhotoInfoRo(String photoPath, String desc, Long size, String categroy, int commendNums, int badNums, Long perPhotoRoId, String commentIds) {
         this.photoPath = photoPath;
         this.desc = desc;
         this.size = size;
@@ -90,11 +90,11 @@ public class BasePhotoInfoRo extends BaseRedisObject<Integer>{
         this.badNums = badNums;
     }
 
-    public Integer getPerPhotoRoId() {
+    public Long getPerPhotoRoId() {
         return perPhotoRoId;
     }
 
-    public void setPerPhotoRoId(Integer perPhotoRoId) {
+    public void setPerPhotoRoId(Long perPhotoRoId) {
         this.perPhotoRoId = perPhotoRoId;
     }
 

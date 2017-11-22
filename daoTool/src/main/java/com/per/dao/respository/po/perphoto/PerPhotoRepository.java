@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
  * @Date 2017-11-16  14:20
  */
 @Repository
-public interface PerPhotoRepository extends CommonJpaRepository<PerPhoto,Integer>{
+public interface PerPhotoRepository extends CommonJpaRepository<PerPhoto,Long>{
 }

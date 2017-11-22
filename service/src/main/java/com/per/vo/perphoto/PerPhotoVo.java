@@ -2,6 +2,7 @@ package com.per.vo.perphoto;
 
 import com.per.dao.enums.perphoto.ModelType;
 import com.per.dao.po.perphoto.BasePhotoInfo;
+import com.per.dao.ro.perphoto.PerPhotoRo;
 import com.per.vo.BaseVoImplSerilizable;
 
 import javax.persistence.EnumType;
@@ -16,7 +17,7 @@ import java.util.List;
  * @Date 2017-11-16  15:32
  */
 public class PerPhotoVo implements BaseVoImplSerilizable{
-    private Integer id;
+    private Long id;
     private Timestamp createTimestamp;
     private List<BasePhotoInfoVo> photoInfos;
     /** 音乐地址*/
@@ -28,14 +29,25 @@ public class PerPhotoVo implements BaseVoImplSerilizable{
     /** 模版编号*/
     private Integer modelNo;
     /** 用户id*/
-    private Integer userId;
+    private Long userId;
     /** 能来人数*/
     private Integer canComeNum;
 
     public PerPhotoVo() {
     }
 
-    public PerPhotoVo(Integer id, Timestamp createTimestamp, List<BasePhotoInfoVo> photoInfos, String musicPath, String invotationNo, ModelType type, Integer modelNo, Integer userId, Integer canComeNum) {
+    public PerPhotoVo(PerPhotoRo ro){
+        this.id = ro.getId();
+        this.createTimestamp = ro.getCreateTimestamp();
+        this.musicPath = ro.getMusicPath();
+        this.invotationNo = ro.getInvotationNo();
+        this.type = ro.getType();
+        this.modelNo = ro.getModelNo();
+        this.userId = ro.getUserId();
+        this.canComeNum = ro.getCanComeNum();
+    }
+
+    public PerPhotoVo(Long id, Timestamp createTimestamp, List<BasePhotoInfoVo> photoInfos, String musicPath, String invotationNo, ModelType type, Integer modelNo, Long userId, Integer canComeNum) {
         this.id = id;
         this.createTimestamp = createTimestamp;
         this.photoInfos = photoInfos;
@@ -47,11 +59,11 @@ public class PerPhotoVo implements BaseVoImplSerilizable{
         this.canComeNum = canComeNum;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -103,11 +115,11 @@ public class PerPhotoVo implements BaseVoImplSerilizable{
         this.modelNo = modelNo;
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

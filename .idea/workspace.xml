@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b76a360-82e9-451c-b4e9-7a9fe50cec60" name="Default" comment="较乱的整理了下，加入了Spring security验证">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/oss/OssConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/oss/OssUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/ModelType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/PhotoDataType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhoto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerCommendVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java" />
+    <list default="true" id="0b76a360-82e9-451c-b4e9-7a9fe50cec60" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/perphotodata.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/menuopen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/per/table/BootstrapTablePageResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/SoaIndexFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/ZooClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/system/IdService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/base/BaseTrans.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/page/PageVo.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/per/service/AbstractBaseService.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/backmanagement_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/backmanagement_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/pom.xml" afterPath="$PROJECT_DIR$/backmanagement/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-manage.xml" afterPath="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-manage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/list.jsp" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/per/result/JSONResult.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/result/JSONResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/pom.xml" afterPath="$PROJECT_DIR$/daoTool/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/admin/Role.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/admin/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java" afterPath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml" afterPath="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-security.xml" afterPath="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/main/footer.jsp" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/main/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/include/base-param.jsp" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/include/base-param.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main-console.js" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main-console.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/ConfigUtils.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/ConfigUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/admin/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/admin/AdminServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/admin/AdminRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/AdminRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/admin/MainMenuRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/MainMenuRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/admin/MenuItemRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/MenuItemRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/admin/ResourceRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/ResourceRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/admin/RoleRepository.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/RoleRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/api/ComJedisRedis.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/api/ComJedisRedis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/bean/BaseRedisObject.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/bean/BaseRedisObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhoto.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/service/target/" />
@@ -74,79 +82,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PerPhotoServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PerPhotoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerPhotoServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainMenuController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/menu/MainMenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/admin/AdminServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="369" column="64" lean-forward="true" selection-start-line="369" selection-start-column="64" selection-end-line="369" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3205#3206#0" expanded="true" />
-                <element signature="e#3264#3265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-manage.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-manage.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <marker date="1510885063319" expanded="false" signature="2067:2091" ph="${oss_config.bucketName}" />
-                <marker date="1510885063319" expanded="false" signature="2141:2170" ph="${oss_config.accessKeySecret}" />
-                <marker date="1510885063319" expanded="false" signature="2219:2244" ph="${oss_config.accessKeyId}" />
-                <marker date="1510885063319" expanded="false" signature="2295:2323" ph="${oss_config.local_endpoint}" />
-                <marker date="1510885063319" expanded="false" signature="2375:2404" ph="${oss_config.remote_endpoint}" />
-                <marker date="1510885063319" expanded="false" signature="2534:2562" ph="${oss_config.local_endpoint}" />
-                <marker date="1510885063319" expanded="false" signature="2618:2643" ph="${oss_config.accessKeyId}" />
-                <marker date="1510885063319" expanded="false" signature="2703:2732" ph="${oss_config.accessKeySecret}" />
-                <marker date="1510885063319" expanded="false" signature="2863:2892" ph="${oss_config.remote_endpoint}" />
-                <marker date="1510885063319" expanded="false" signature="2948:2973" ph="${oss_config.accessKeyId}" />
-                <marker date="1510885063319" expanded="false" signature="3033:3062" ph="${oss_config.accessKeySecret}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-security.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-security.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+            <state relative-caret-position="453">
+              <caret line="161" column="42" lean-forward="false" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -157,12 +107,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -183,6 +133,17 @@
       <find>loadUserByUsername</find>
       <find>passwordEncoder</find>
       <find>finished</find>
+      <find>webroot</find>
+      <find>logo_button</find>
+      <find>del_logo_button</find>
+      <find>input-icon</find>
+      <find>elements</find>
+      <find>logo_file</find>
+      <find>get_image_uri</find>
+      <find>btn-primary</find>
+      <find>save</find>
+      <find>hdel</find>
+      <find>coverForm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,57 +157,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/admin/Admin.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/admin/AdminRepository.java" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/JedisCurdCommonRedisDao.java" />
-        <option value="$PROJECT_DIR$/base/src/main/resources/datasource.xml" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/resources/application-dao.xml" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/resources/datasource.xml" />
-        <option value="$PROJECT_DIR$/show/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/show/pom.xml" />
-        <option value="$PROJECT_DIR$/show/src/main/resources/application.xml" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/menu/AdminController.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/per/oss/OssConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/backmanagement/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/per/result/JSONResult.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/upload/FileUploadService.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/per/oss/OssUtil.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfo.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/admin/Role.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/ModelType.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/DelReqVo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/PhotoDataType.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/admin/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerCommendVo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhoto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" />
         <option value="$PROJECT_DIR$/daoTool/pom.xml" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml" />
         <option value="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-manage.xml" />
         <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/list.jsp" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/ZooClient.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/ConfigUtils.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/SoaIndexFactory.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/per/service/AbstractBaseService.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/base/BaseTrans.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/system/IdService.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/page/PageVo.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main-console.js" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/include/base-param.jsp" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/menuopen.js" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/per/table/BootstrapTablePageResult.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/main/footer.jsp" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/perphotodata.jsp" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/basephoto.tag" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag" />
         <option value="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-security.xml" />
+        <option value="$PROJECT_DIR$/backmanagement/pom.xml" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/api/ComJedisRedis.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/bean/BaseRedisObject.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java" />
       </list>
     </option>
   </component>
@@ -407,6 +368,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -549,6 +512,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="perphoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="transformer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -595,7 +642,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transformer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,562 +797,6 @@
               <option name="myItemId" value="per" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perphoto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="respository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="respository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perphoto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="respository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="po" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perphoto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="respository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="po" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="po" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perphoto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="po" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enums" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daoTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enums" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perphoto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1320,276 +849,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menuitem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainmenu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="madmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1839,11 +1098,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="perphoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
+              <option name="myItemId" value="backmanagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1893,53 +1190,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1953,17 +1206,17 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF" />
-      <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\resources" />
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\resources" />
-      <recent name="D:\bozhi_kuaihe_git\marry\service\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp" />
       <recent name="D:\bozhi_kuaihe_git\marry\daoTool\src\main\resources" />
       <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\resources\connection" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF\tags\perphoto" />
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF" />
+      <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\resources" />
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.back">
@@ -2588,7 +1841,11 @@
       <workItem from="1510623497796" duration="19337000" />
       <workItem from="1510710308249" duration="17580000" />
       <workItem from="1510794686164" duration="19163000" />
-      <workItem from="1510882180719" duration="7066000" />
+      <workItem from="1510882180719" duration="7621000" />
+      <workItem from="1511141672408" duration="19130000" />
+      <workItem from="1511226785879" duration="6679000" />
+      <workItem from="1511234789832" duration="16583000" />
+      <workItem from="1511332726724" duration="2832000" />
     </task>
     <task id="LOCAL-00001" summary="init-redis-finish">
       <created>1508313031755</created>
@@ -2646,11 +1903,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510734085301</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="较乱的整理了下，加入了Spring security验证">
+      <created>1510891190931</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510891190931</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157457000" />
+    <option name="totallyTimeSpent" value="203236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2680,9 +1944,8 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.4902439" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42389524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5220949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -2691,18 +1954,19 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2118003" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18305598" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.4902439" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5097561" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2728,7 +1992,7 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2737,545 +2001,382 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/per/enums/BaseListEnumConverter.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/console/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="313">
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/util/SortedSetAssist.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/login/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="394">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1150#1151#0" expanded="false" />
-            <element signature="e#1182#1183#0" expanded="false" />
-            <element signature="e#1232#1233#0" expanded="false" />
-            <element signature="e#1274#1275#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1332#1333#0" expanded="false" />
-            <element signature="e#1372#1373#0" expanded="false" />
-            <element signature="e#1404#1405#0" expanded="false" />
-            <element signature="e#1433#1434#0" expanded="false" />
-            <element signature="e#1460#1461#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-            <element signature="e#1530#1531#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-            <element signature="e#1596#1597#0" expanded="false" />
-            <element signature="e#1644#1645#0" expanded="false" />
-            <element signature="e#1684#1685#0" expanded="false" />
-            <element signature="e#1719#1720#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-            <element signature="e#1804#1805#0" expanded="false" />
-            <element signature="e#1850#1851#0" expanded="false" />
-            <element signature="e#1881#1882#0" expanded="false" />
-            <element signature="e#1911#1912#0" expanded="false" />
-            <element signature="e#1954#1955#0" expanded="false" />
-            <element signature="e#1992#1993#0" expanded="false" />
-            <element signature="e#2032#2033#0" expanded="false" />
-            <element signature="e#2067#2068#0" expanded="false" />
-            <element signature="e#2124#2125#0" expanded="false" />
-            <element signature="e#2172#2173#0" expanded="false" />
-            <element signature="e#2209#2210#0" expanded="false" />
-            <element signature="e#2242#2243#0" expanded="false" />
-            <element signature="e#2294#2295#0" expanded="false" />
-            <element signature="e#2338#2339#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/AdminRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="75" lean-forward="true" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1269#1270#0" expanded="false" />
-            <element signature="e#1311#1312#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1421#1422#0" expanded="false" />
-            <element signature="e#1477#1478#0" expanded="false" />
-            <element signature="e#1525#1526#0" expanded="false" />
-            <element signature="e#1564#1565#0" expanded="false" />
-            <element signature="e#1599#1600#0" expanded="false" />
-            <element signature="e#1655#1656#0" expanded="false" />
-            <element signature="e#1703#1704#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1801#1802#0" expanded="false" />
-            <element signature="e#1833#1834#0" expanded="false" />
-            <element signature="e#1869#1870#0" expanded="false" />
-            <element signature="e#1901#1902#0" expanded="false" />
-            <element signature="e#1951#1952#0" expanded="false" />
-            <element signature="e#1993#1994#0" expanded="false" />
-            <element signature="e#2028#2029#0" expanded="false" />
-            <element signature="e#2058#2059#0" expanded="false" />
-            <element signature="e#2105#2106#0" expanded="false" />
-            <element signature="e#2143#2144#0" expanded="false" />
-            <element signature="e#2177#2178#0" expanded="false" />
-            <element signature="e#2204#2205#0" expanded="false" />
-            <element signature="e#2247#2248#0" expanded="false" />
-            <element signature="e#2279#2280#0" expanded="false" />
-            <element signature="e#2317#2318#0" expanded="false" />
-            <element signature="e#2350#2351#0" expanded="false" />
-            <element signature="e#2403#2404#0" expanded="false" />
-            <element signature="e#2447#2448#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="219" column="42" lean-forward="true" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/ModelType.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/PhotoDataType.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/login/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#615#616#0" expanded="false" />
-            <element signature="e#643#644#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-1847">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java">
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/admin/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/admin/AdminServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="208" column="45" lean-forward="true" selection-start-line="208" selection-start-column="45" selection-end-line="208" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/admin/AdminVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/admin/AdminVo2Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1299#1300#0" expanded="false" />
-            <element signature="e#1352#1353#0" expanded="false" />
-            <element signature="e#1396#1397#0" expanded="false" />
-            <element signature="e#1430#1431#0" expanded="false" />
-            <element signature="e#1459#1460#0" expanded="false" />
-            <element signature="e#1504#1505#0" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1590#1591#0" expanded="false" />
-            <element signature="e#1623#1624#0" expanded="false" />
-            <element signature="e#1688#1689#0" expanded="false" />
-            <element signature="e#1732#1733#0" expanded="false" />
-            <element signature="e#1767#1768#0" expanded="false" />
-            <element signature="e#1797#1798#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1882#1883#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2000#2001#0" expanded="false" />
-            <element signature="e#2042#2043#0" expanded="false" />
-            <element signature="e#2081#2082#0" expanded="false" />
-            <element signature="e#2116#2117#0" expanded="false" />
-            <element signature="e#2172#2173#0" expanded="false" />
-            <element signature="e#2220#2221#0" expanded="false" />
-            <element signature="e#2254#2255#0" expanded="false" />
-            <element signature="e#2281#2282#0" expanded="false" />
-            <element signature="e#2324#2325#0" expanded="false" />
-            <element signature="e#2356#2357#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/per/support/jpa/po/BaseEntityPKIncrment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerCommendVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/com/aliyun/oss/common/comm/IdleConnectionReaper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhoto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="14" column="75" lean-forward="true" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-session-share.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/console/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/menu/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="180" column="45" lean-forward="true" selection-start-line="180" selection-start-column="45" selection-end-line="180" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/menu/MainMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/resources/datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="100" column="78" lean-forward="true" selection-start-line="100" selection-start-column="78" selection-end-line="100" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="66" column="60" lean-forward="true" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/include/base-param.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2321">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2140">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/menuitem/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.5.RELEASE/spring-security-core-3.2.5.RELEASE.jar!/org/springframework/security/access/expression/SecurityExpressionRoot.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
-          <folding>
-            <element signature="e#2638#2639#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-          </folding>
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/menu/mainmenu/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        <state relative-caret-position="199">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/per/support/jpa/repository/CommonJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="93" lean-forward="true" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/admin/MainMenuRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="97" column="45" lean-forward="false" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="552" column="46" lean-forward="true" selection-start-line="552" selection-start-column="46" selection-end-line="552" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/basephoto.tag" />
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="368">
+          <caret line="28" column="72" lean-forward="false" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="189" column="20" lean-forward="true" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/login/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="380">
+          <caret line="67" column="89" lean-forward="false" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/perphotodata.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#371#388#0#JAVA" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/per/result/JSONResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/admin/menu/MainMenuController.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/admin/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="369" column="64" lean-forward="true" selection-start-line="369" selection-start-column="64" selection-end-line="369" selection-end-column="64" />
+        <state relative-caret-position="294">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3264#3265#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-manage.xml">
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/api/ComJedisRedis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="214">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="41" column="113" lean-forward="false" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/util/SafeEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Protocol.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Connection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="130" column="28" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/BinaryClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="271" column="20" lean-forward="false" selection-start-line="271" selection-start-column="20" selection-end-line="271" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="224" column="15" lean-forward="false" selection-start-line="224" selection-start-column="15" selection-end-line="224" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="351" column="22" lean-forward="true" selection-start-line="351" selection-start-column="22" selection-end-line="351" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/ShardedJedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="264" column="19" lean-forward="true" selection-start-line="264" selection-start-column="19" selection-end-line="264" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/bean/BaseRedisObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/system/IdService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
           <folding>
-            <marker date="1510885063319" expanded="false" signature="2067:2091" ph="${oss_config.bucketName}" />
-            <marker date="1510885063319" expanded="false" signature="2141:2170" ph="${oss_config.accessKeySecret}" />
-            <marker date="1510885063319" expanded="false" signature="2219:2244" ph="${oss_config.accessKeyId}" />
-            <marker date="1510885063319" expanded="false" signature="2295:2323" ph="${oss_config.local_endpoint}" />
-            <marker date="1510885063319" expanded="false" signature="2375:2404" ph="${oss_config.remote_endpoint}" />
-            <marker date="1510885063319" expanded="false" signature="2534:2562" ph="${oss_config.local_endpoint}" />
-            <marker date="1510885063319" expanded="false" signature="2618:2643" ph="${oss_config.accessKeyId}" />
-            <marker date="1510885063319" expanded="false" signature="2703:2732" ph="${oss_config.accessKeySecret}" />
-            <marker date="1510885063319" expanded="false" signature="2863:2892" ph="${oss_config.remote_endpoint}" />
-            <marker date="1510885063319" expanded="false" signature="2948:2973" ph="${oss_config.accessKeyId}" />
-            <marker date="1510885063319" expanded="false" signature="3033:3062" ph="${oss_config.accessKeySecret}" />
+            <element signature="e#2109#2110#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="161" column="42" lean-forward="false" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
