@@ -1,11 +1,13 @@
 package com.redis.util;
 
+import com.alibaba.fastjson.JSON;
 import com.per.zookeeper.ZookProperties;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.ShardedJedisPool;
@@ -59,6 +61,9 @@ public class ShardedJedisPoolLoad {
             poolConfig.setTimeBetweenEvictionRunsMillis(config.getLong("redis.timeBetweenEvictionRunsMillis"));
             poolConfig.setMinEvictableIdleTimeMillis(config.getLong("redis.minEvictableIdleTimeMillis"));
             poolConfig.setTestOnBorrow(config.getBoolean("redis.testOnBorrow"));
+            poolConfig.setMinIdle(config.getInt("redis.minIdle"));
+            poolConfig.setMaxWaitMillis(config.getLong("redis.maxWaitMillis"));
+
 
             logger.debug("开始加载redis主机列表");
             String hosts = config.getString("redis.host");
@@ -103,7 +108,18 @@ public class ShardedJedisPoolLoad {
                 logger.error("请指定至少一个redis主机");
                 throw new RuntimeException("请指定至少一个redis主机");
             }
-            shardedJedisPool = new ShardedJedisPool(poolConfig, shards);
+            logger.info(JSON.toJSONString(poolConfig));
+            logger.info(JSON.toJSONString(shards));
+            try{
+                shardedJedisPool = new ShardedJedisPool(poolConfig, shards);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            if(shardedJedisPool == null){
+                logger.info("连接初始化没有成功....");
+            }
+
+            shardedJedisPool.getResource().set("tomcat","success");
         }
         return shardedJedisPool;
     }

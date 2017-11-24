@@ -28,7 +28,7 @@
                 <redis.maxIdle>10</redis.maxIdle>
                 <redis.minIdle>1</redis.minIdle>
                 <redis.testOnBorrow>true</redis.testOnBorrow>
-                <redis.maxWaitMillis>1000</redis.maxWaitMillis>
+                <redis.maxWaitMillis>10000</redis.maxWaitMillis>
                 <redis.testOnReturn>true</redis.testOnReturn>
                 <redis.testWhileIdle>true</redis.testWhileIdle>
                 <redis.timeBetweenEvictionRunsMillis>30000</redis.timeBetweenEvictionRunsMillis>

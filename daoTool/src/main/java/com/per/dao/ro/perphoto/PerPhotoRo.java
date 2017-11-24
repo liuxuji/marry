@@ -3,6 +3,7 @@ package com.per.dao.ro.perphoto;
 import com.per.dao.enums.perphoto.ModelType;
 import com.redis.annotation.FieldSortedSet;
 import com.redis.annotation.Ro;
+import com.redis.annotation.RoSortedSet;
 import com.redis.bean.BaseRedisObject;
 
 /**
@@ -12,6 +13,7 @@ import com.redis.bean.BaseRedisObject;
  * @Date 2017-11-16  11:07
  */
 @Ro(key = "per:photo")
+@RoSortedSet(key = "sorted")
 public class PerPhotoRo extends BaseRedisObject<Long>{
     /** 用户id，加上下面这个注解后，会在ro队列中生成一个 以userId结尾的 key，方便统计每个用户的 邀请函个数 */
     @FieldSortedSet(key = "userId")

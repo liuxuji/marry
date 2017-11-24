@@ -3,6 +3,7 @@ package com.redis.spi;
 import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.google.common.collect.Lists;
 import com.redis.api.ComJedisRedis;
+import com.redis.util.ShardedJedisPoolLoad;
 import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.*;
 import redis.clients.util.Pool;
@@ -26,6 +27,13 @@ public class ShardedJedisRedis implements ComJedisRedis<ShardedJedis> {
 
     @Override
     public Pool<ShardedJedis> getPool() {
+        if(shardedJedisPool == null){
+            synchronized (shardedJedisPool){
+                if(shardedJedisPool == null){
+                    shardedJedisPool = ShardedJedisPoolLoad.getShardedJedisPool();
+                }
+            }
+        }
         return shardedJedisPool;
     }
 
@@ -36,7 +44,9 @@ public class ShardedJedisRedis implements ComJedisRedis<ShardedJedis> {
             jedis = shardedJedisPool.getResource();
             return jedis.hget(key.getBytes(),field.getBytes());
         }finally {
-            shardedJedisPool.returnResource(jedis);
+            if(jedis != null){
+                jedis.close();
+            }
         }
     }
 

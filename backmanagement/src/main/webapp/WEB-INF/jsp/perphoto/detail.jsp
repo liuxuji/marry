@@ -32,17 +32,16 @@
                 <div class="form-group">
                     <label for="invotationNo" class="col-md-2 control-label">模版类型:</label>
                     <div class="col-md-5">
-                        <div class="input-icon">
-                            <input name="type" id="invotationNo" type="text" placeholder="模版类型"
-                                   class="form-control" value="${dataDetail.type}" required>
-                        </div>
+                        <select id ="invotationNo" name = "invotationNo" class="form-control valid">
+                            <option value="0" selected>不使用模版</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">音乐地址:</label>
                     <div class="col-md-5">
-                        <input name="description" id="musicPath" type="text" placeholder="音乐地址"
+                        <input name="musicPath" id="musicPath" type="text" placeholder="音乐地址"
                                class="form-control" value="${dataDetail.musicPath}" required>
                     </div>
                 </div>
@@ -80,7 +79,7 @@
 
         <div class="form-actions">
             <div class="col-md-offset-5 col-md-7">
-                <button id="save" type="submit" class="btn btn-primary">
+                <button id="save" type="submit" class="btn btn-primary" onclick="saveData()">
                     保存
                 </button>
             </div>
@@ -95,6 +94,25 @@
 <script src="${webroot}/madmin/vendors/moment/moment.js"></script>
 <script src="${webroot}/madmin/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript">
+
+    function saveData(){
+        var url = "${webroot}/perphoto/save.do";
+        console.log($('#coverForm').serialize());
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url: url,
+            data: $('#coverForm').serialize(),
+            async: false
+        }).done(function (data) {
+            layer.msg("保存成功");
+            console.log(data);
+            menuopen('${webroot}/perphoto/list.do');
+        }).fail(function () {
+            layer.msg("保存失败");
+        });
+    }
+
     $(function () {
         $("#coverForm").validate(
             {

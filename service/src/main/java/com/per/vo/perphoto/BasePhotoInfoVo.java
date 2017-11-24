@@ -15,7 +15,7 @@ public class BasePhotoInfoVo {
     private Long id;
     private Timestamp createTimestamp;
     /**归属于请柬的id */
-    private Integer photoId;
+    private Long photoId;
     /** 图片路径*/
     private String photoPath;
     /** 描述*/
@@ -43,7 +43,7 @@ public class BasePhotoInfoVo {
         this.badNums = ro.getBadNums();
     }
 
-    public BasePhotoInfoVo(Long id, Timestamp createTimestamp, Integer photoId, String photoPath, String descs, Long size, String categroy, int commendNums, int badNums, List<PerCommendVo> perCommentList) {
+    public BasePhotoInfoVo(Long id, Timestamp createTimestamp, Long photoId, String photoPath, String descs, Long size, String categroy, int commendNums, int badNums, List<PerCommendVo> perCommentList) {
         this.id = id;
         this.createTimestamp = createTimestamp;
         this.photoId = photoId;
@@ -75,11 +75,11 @@ public class BasePhotoInfoVo {
         this.createTimestamp = createTimestamp;
     }
 
-    public Integer getPhotoId() {
+    public Long getPhotoId() {
         return photoId;
     }
 
-    public void setPhotoId(Integer photoId) {
+    public void setPhotoId(Long photoId) {
         this.photoId = photoId;
     }
 

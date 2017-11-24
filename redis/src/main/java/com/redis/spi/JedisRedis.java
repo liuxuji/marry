@@ -55,6 +55,11 @@ public class JedisRedis implements ComJedisRedis<Jedis>{
         }
     }
 
+    @Override
+    public Long hdel(String key, String... field) {
+        return hdel(key, field);
+    }
+
     /* (non-Javadoc)
 	 * @see com.redis.spi.ComJedisRedis#hset(java.lang.String, java.lang.String, byte[])
 	 */

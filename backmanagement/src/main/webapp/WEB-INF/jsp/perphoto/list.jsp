@@ -59,7 +59,6 @@
         queryParams: queryParams,
         columns: [{
             label: 'state', checkbox: true
-
         },  {
             title: "编号", field: "id", sortable: true, align: "center", valign: "middle"
         },{
