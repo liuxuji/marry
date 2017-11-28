@@ -58,6 +58,19 @@
                 <redis.session.host>127.0.0.1@</redis.session.host>
                 <redis.session.port>6379@</redis.session.port>
                 <redis.session.password></redis.session.password>
+                <!-- mysql -->
+                <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
+                <jdbc.url>jdbc:mysql://rm-wz94yc300a330sam5o.mysql.rds.aliyuncs.com:3306/marry?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</jdbc.url>
+                <jdbc.username>root</jdbc.username>
+                <jdbc.password>WwwXiaoBoWriteMarryPro**</jdbc.password>
+                <show_sql>true</show_sql>
+                <enable.smscode.test>true</enable.smscode.test>
+                <!-- oss-->
+                <oss_config.remote_endpoint>oss-cn-beijing.aliyuncs.com</oss_config.remote_endpoint>
+                <oss_config.local_endpoint>oss-cn-beijing-internal.aliyuncs.com</oss_config.local_endpoint>
+                <oss_config.accessKeyId>LTAIrFCfLHIJEnKC</oss_config.accessKeyId>
+                <oss_config.accessKeySecret>0CSWTMv1XcOx6rhS7tyHYTkm6wugn3</oss_config.accessKeySecret>
+                <oss_config.bucketName>xxb-1989</oss_config.bucketName>
             </properties>
         </profile>
         <profile>
@@ -83,8 +96,8 @@
                 <!-- oss-->
                 <oss_config.remote_endpoint>oss-cn-beijing.aliyuncs.com</oss_config.remote_endpoint>
                 <oss_config.local_endpoint>oss-cn-beijing-internal.aliyuncs.com</oss_config.local_endpoint>
-                <oss_config.accessKeyId>LTAIK2hRIQcKMXKK</oss_config.accessKeyId>
-                <oss_config.accessKeySecret>7y9MufvKxd3zsrFyTKZDzFKYr18xZj</oss_config.accessKeySecret>
+                <oss_config.accessKeyId>LTAIrFCfLHIJEnKC</oss_config.accessKeyId>
+                <oss_config.accessKeySecret>0CSWTMv1XcOx6rhS7tyHYTkm6wugn3</oss_config.accessKeySecret>
                 <oss_config.bucketName>xxb-1989</oss_config.bucketName>
             </properties>
         </profile>

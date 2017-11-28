@@ -14,14 +14,13 @@ import com.per.vo.perphoto.BasePhotoInfoVo;
 public class BasePhotoInfoVo2BasePhotoInfo implements Function<BasePhotoInfoVo,BasePhotoInfoRo>{
     @Override
     public BasePhotoInfoRo apply(BasePhotoInfoVo vo) {
-        BasePhotoInfoRo basePhotoInfo = new BasePhotoInfoRo();
-        BasePhotoInfo info = new BasePhotoInfo();
+        BasePhotoInfoRo info = new BasePhotoInfoRo();
         info.setBadNums(vo.getBadNums());
         info.setPhotoPath(vo.getPhotoPath());
-        info.setDescs(vo.getDescs());
+        info.setDesc(vo.getDescs());
         info.setSize(vo.getSize());
         info.setCategroy(vo.getCategroy());
         info.setCommendNums(vo.getCommendNums());
-        return basePhotoInfo;
+        return info;
     }
 }

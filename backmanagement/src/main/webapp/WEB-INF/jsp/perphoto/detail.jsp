@@ -3,12 +3,39 @@
 <%@ include file="/WEB-INF/jsp/include/base-param.jsp" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="hp" tagdir="/WEB-INF/tags/perphoto" %>
-
 <link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-datepicker/css/datepicker.css">
-<link type="text/css" rel="stylesheet"
-      href="${webroot}/madmin/vendors/bootstrap-daterangepicker/daterangepicker-bs3.css">
-<link type="text/css" rel="stylesheet"
-      href="${webroot}/madmin/vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-daterangepicker/daterangepicker-bs3.css">
+<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+
+<%--<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-colorpicker/css/colorpicker.css">--%>
+<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+<%--<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-clockface/css/clockface.css">--%>
+<%--<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/bootstrap-switch/css/bootstrap-switch.css">--%>
+<%--<link type="text/css" rel="stylesheet" href="${webroot}/madmin/vendors/iCheck/skins/all.css">--%>
+<script src="${webroot}/madmin/vendors/jquery-validate/jquery.validate.min.js"></script>
+<script src="${webroot}/madmin/js/jquery.form.js"></script>
+<%--<script src="${webroot}/js/form-validation.js"></script>--%>
+<%--<script src="${webroot}/js/ui-checkbox-radio.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/select2/select2.min.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/bootstrap-select/bootstrap-select.min.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/multi-select/js/jquery.multi-select.js"></script>--%>
+<%--<script src="${webroot}/js/ui-dropdown-select.js"></script>--%>
+
+<script src="${webroot}/madmin/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="${webroot}/madmin/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="${webroot}/madmin/vendors/moment/moment.js"></script>
+<script src="${webroot}/madmin/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="${webroot}/madmin/vendors/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+<%--<script src="${webroot}/madmin/vendors/bootstrap-clockface/js/clockface.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/bootstrap-switch/js/bootstrap-switch.min.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/jquery-maskedinput/jquery-maskedinput.js"></script>--%>
+<%--<script src="${webroot}/madmin/vendors/charCount.js"></script>--%>
+<script src="${webroot}/madmin/vendors/iCheck/icheck.min.js"></script>
+<%--<script src="${webroot}/madmin/vendors/iCheck/custom.min.js"></script>--%>
+<%--<script src="${webroot}/js/form-components.js"></script>--%>
+<script src="${webroot}/madmin/vendors/kindeditor/kindeditor.js"></script>
+<script src="${webroot}/madmin/vendors/kindeditor/lang/zh-CN.js"></script>
 <style type="text/css">
     tr.detail-row {
         display: none;
@@ -22,6 +49,7 @@
     }
 </style>
 <div class="panel panel-default new-add-brand">
+    <div><button onclick="tt()" >TEST</button></div>
     <div class="panel-heading">
             <button class="btn btn-link pull-right" onclick="menuopen('/perphoto/list.do');">返回</button>
         <h3 class="panel-title">数据编辑</h3>
@@ -46,9 +74,90 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label class="col-md-2 control-label">标题:</label>
+                    <div class="col-md-5">
+                        <input name="title" id="title" type="text" placeholder="标题"
+                               class="form-control" value="${dataDetail.title}" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">正文内容:</label>
+                    <div class="col-md-5">
+                        <input name="content" id="content" type="text" placeholder="正文内容"
+                               class="form-control" value="${dataDetail.content}" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">背景大图:</label>
+                    <div class="col-md-5">
+                        <input name="mainPhotoPath" id="mainPhotoPath" type="text" placeholder="背景大图"
+                               class="form-control" value="${dataDetail.mainPhotoPath}" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">生效时间:</label>
+                    <div class="col-md-5">
+                        <div class="input-group datetimepicker-disable-time date">
+                            <input name="beginTime" id="beginTime" type="text" placeholder="生效时间"
+                                   class="form-control" value="${dataDetail.beginTime}" required>
+                            <a href="javascript:void(0);" class="input-group-addon"><i class="fa fa-calendar timepicker"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">结束时间:</label>
+                    <div class="col-md-5">
+                        <div class="input-group datetimepicker-disable-time date">
+                            <input name="endTime" id="endTime" type="text" placeholder="结束时间"
+                                   class="form-control" value="${dataDetail.endTime}" required>
+                            <a href="javascript:void(0);" class="input-group-addon"><i class="fa fa-calendar timepicker"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">婚礼时间:</label>
+                    <div class="col-md-5">
+                        <div class="input-group datetimepicker-disable-time date">
+                            <input name="marryTime" id="marryTime" type="text" placeholder="婚礼时间"
+                                   class="form-control" value="${dataDetail.marryTime}" required>
+                            <a href="javascript:void(0);" class="input-group-addon"><i class="fa fa-calendar timepicker"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">男名称:</label>
+                    <div class="col-md-5">
+                        <input name="maleName" id="maleName" type="text" placeholder="男名称"
+                               class="form-control" value="${dataDetail.maleName}" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">女名称:</label>
+                    <div class="col-md-5">
+                        <input name="femaleName" id="femaleName" type="text" placeholder="女名称"
+                               class="form-control" value="${dataDetail.femaleName}" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">开始地点:</label>
+                    <div class="col-md-5">
+                        <input name="marryAddress" id="marryAddress" type="text" placeholder="开始地点"
+                               class="form-control" value="${dataDetail.marryAddress}" required>
+                    </div>
+                </div>
+
                 <div class="static-elements-container">
                     <div class="form-group">
-                        <label class="col-md-2 control-label">图片数据:</label>
+                        <label class="col-md-2 control-label">更多图片数据:</label>
                         <div class="col-md-10">
                             <table id="elements-table" class="table  table-bordered table-hover">
                                 <thead>
@@ -58,13 +167,22 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <hp:programStaticElements elements="${element.elements}" fieldNamePrefix="${fieldNamePrefix}"  />
+                                <hp:programStaticElements elements="${dataDetail.photoInfos}" fieldNamePrefix="${fieldNamePrefix}"  />
                                 </tbody>
                             </table>
                             <button type="button" class="add-element-btn" data-field-name-prefix="${fieldNamePrefix}" onclick="addCoverTemplateElement(this)">
                                 <i class="ace-icon fa fa-plus"></i>
                             </button>
                         </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">富文本内容:</label>
+                    <div class="col-md-9">
+                        <textarea name="textArea" id="textArea" rows="12" class="form-control kindEditor">
+                            ${dataDetail.textArea}
+                        </textarea>
                     </div>
                 </div>
 
@@ -87,14 +205,8 @@
     </form>
 </div>
 
-<script src="${webroot}/madmin/vendors/select2/select2.min.js"></script>
-<script src="${webroot}/madmin/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="${webroot}/madmin/vendors/multi-select/js/jquery.multi-select.js"></script>
-<script src="${webroot}/js/ui-dropdown-select.js"></script>
-<script src="${webroot}/madmin/vendors/moment/moment.js"></script>
-<script src="${webroot}/madmin/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript">
-
+    function tt() {menuopen('${webroot}/perphoto/test.do')}
     function saveData(){
         var url = "${webroot}/perphoto/save.do";
         console.log($('#coverForm').serialize());
@@ -114,29 +226,7 @@
     }
 
     $(function () {
-        $("#coverForm").validate(
-            {
-                submitHandler: function (form) {
-                    var url = "${webroot}/perphoto/save.do";
-                    console.log($('#coverForm').serialize());
-                    $.ajax({
-                        cache: true,
-                        type: "POST",
-                        url: url,
-                        data: $('#coverForm').serialize(),
-                        async: false
-                    }).done(function (data) {
-                        layer.msg("保存成功");
-                        console.log(data);
-                        menuopen('${webroot}/perphoto/list.do');
-                    }).fail(function () {
-                        layer.msg("保存失败");
-                    });
-                }
-            }
-        );
         init();
-
     });
 
     function updateElementDataConfigContainerDisplayStatus() {
@@ -243,6 +333,27 @@
             showMeridian: 1,
             sideBySide: true //可以同时选择日期和时间
         });
+
+        Date.prototype.format =function(format)
+        {
+            var o = {
+                "M+" : this.getMonth()+1, //month
+                "d+" : this.getDate(), //day
+                "h+" : this.getHours(), //hour
+                "m+" : this.getMinutes(), //minute
+                "s+" : this.getSeconds(), //second
+                "q+" : Math.floor((this.getMonth()+3)/3), //quarter
+                "S" : this.getMilliseconds() //millisecond
+            }
+            if(/(y+)/.test(format)) format=format.replace(RegExp.$1,
+                (this.getFullYear()+"").substr(4- RegExp.$1.length));
+            for(var k in o)if(new RegExp("("+ k +")").test(format))
+                format = format.replace(RegExp.$1,
+                    RegExp.$1.length==1? o[k] :
+                        ("00"+ o[k]).substr((""+ o[k]).length));
+            return format;
+        }
+
         $('input.element-data-policy[type=radio]').change(function () {
             updateElementDataConfigContainerDisplayStatus(this);
         });
@@ -285,6 +396,10 @@
             }).fail(function (res) {
                 layer.msg("图片上传功能异常");
             });
+        });
+
+        KindEditor.ready(function (K) {
+            K.create('#textArea');
         });
 
     }

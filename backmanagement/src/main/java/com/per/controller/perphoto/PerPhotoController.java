@@ -79,6 +79,9 @@ public class PerPhotoController extends BaseController{
         return new JSONResult();
     }
 
-
+    @RequestMapping("/test")
+    public ModelAndView test(){
+        return new ModelAndView("/perphoto/test");
+    }
 
 }

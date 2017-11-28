@@ -12,7 +12,7 @@ $(function(){
 	    //关闭远程图片应用
 	    allowImageRemote:false,
 	    //图片上传地址；成功返回JSONObject{"error":0,"url":pictureUrl},失败返回JSONObject{"error":1,"message":"errorMessage"}
-	    uploadJson : "../product/fileupload/kindeditorUpload.do",
+	    uploadJson : "/fileupload/upload.do",
 		afterCreate : function() {
 			this.loadPlugin('autoheight');
 		}

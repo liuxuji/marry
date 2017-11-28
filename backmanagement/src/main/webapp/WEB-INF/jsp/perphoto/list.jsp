@@ -89,6 +89,7 @@
     }
 
     function infoFormatter(value, row, index) {
+        var out_html = "";
         var edit_url = "/perphoto/detail.do?id="+row.id;
         out_html = out_html + "<button class='btn btn-primary' onclick='menuopen(\""+edit_url+"\");' >编辑</button>"
         out_html += "&nbsp;<button onclick='deleteSevenColor(\"" + row.id + "\");' class='btn btn-gray'>删除</button>";
@@ -140,7 +141,7 @@
             $.ajax({
                 cache : true,
                 type : "POST",
-                url : "${webroot }/perphoto/del.do?type=1&id=" + id,
+                url : "${webroot }/perphoto/delPhotoData.do?id=" + id,
                 data : {'id' : id},
                 async : false,
                 error : function(request) {
@@ -148,7 +149,7 @@
                     return false;
                 },
                 success : function(data) {
-                    if(data == "success"){
+                    if(data.code == 0){
                         layer.msg("删除成功");
                         menuopen("/perphoto/list.do");
                     }else{

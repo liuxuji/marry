@@ -2,20 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b76a360-82e9-451c-b4e9-7a9fe50cec60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/util/TestRedisConn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/pom.xml" afterPath="$PROJECT_DIR$/backmanagement/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java" afterPath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/util/TestRedisConn.java" afterPath="$PROJECT_DIR$/backmanagement/src/main/java/com/per/util/TestRedisConn.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/daoTool.iml" afterPath="$PROJECT_DIR$/daoTool/daoTool.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/test.jsp" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/test.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main.js" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/config.js" afterPath="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/per/util/JsonUtil.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/per/util/JsonUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" afterPath="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/redis.iml" afterPath="$PROJECT_DIR$/redis/redis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/JedisRedis.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/JedisRedis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/main/java/com/redis/util/ShardedJedisPoolLoad.java" afterPath="$PROJECT_DIR$/redis/src/main/java/com/redis/util/ShardedJedisPoolLoad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoRo2Vo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoRo2Vo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/pom.xml" afterPath="$PROJECT_DIR$/show/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/java/com/per/controller/perphoto/ShowPerPhotoController.java" afterPath="$PROJECT_DIR$/show/src/main/java/com/per/controller/perphoto/ShowPerPhotoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.html" afterPath="$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.jsp" afterPath="$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/css/marry/animate.min.css" afterPath="$PROJECT_DIR$/show/src/main/webapp/css/marry/animate.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/css/marry/animatev2.css" afterPath="$PROJECT_DIR$/show/src/main/webapp/css/marry/animatev2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/css/marry/common.css" afterPath="$PROJECT_DIR$/show/src/main/webapp/css/marry/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/css/marry/index.css" afterPath="$PROJECT_DIR$/show/src/main/webapp/css/marry/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/css/marry/main.css" afterPath="$PROJECT_DIR$/show/src/main/webapp/css/marry/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/js/marry/init.mix.js" afterPath="$PROJECT_DIR$/show/src/main/webapp/js/marry/init.mix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.lazyload.min.js" afterPath="$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.lazyload.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.min.js" afterPath="$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/js/marry/jweixin-1.0.0.js" afterPath="$PROJECT_DIR$/show/src/main/webapp/js/marry/jweixin-1.0.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/js/marry/main.js" afterPath="$PROJECT_DIR$/show/src/main/webapp/js/marry/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/src/main/webapp/js/marry/tx.js" afterPath="$PROJECT_DIR$/show/src/main/webapp/js/marry/tx.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/service/target/" />
@@ -47,61 +74,67 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PerPhotoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1041#1042#0" expanded="false" />
-                <element signature="e#1098#1099#0" expanded="false" />
-                <element signature="e#1236#1237#0" expanded="false" />
-                <element signature="e#1291#1292#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShardedJedisRedis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backmanagement/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="229">
+              <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="528" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShardedJedisPoolLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/util/ShardedJedisPoolLoad.java">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+            <state relative-caret-position="394">
+              <caret line="866" column="15" lean-forward="true" selection-start-line="866" selection-start-column="15" selection-end-line="866" selection-end-column="15" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#50#0" expanded="false" />
+                <marker date="1511855529037" expanded="true" signature="35217:35233" ph="..." />
+                <marker date="1511855529037" expanded="true" signature="35250:35256" ph="&amp;nbsp;" />
+                <marker date="1511855529037" expanded="true" signature="36399:36415" ph="..." />
+                <marker date="1511855529037" expanded="true" signature="36432:36438" ph="&amp;nbsp;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRedisConn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/util/TestRedisConn.java">
+      <file leaf-file-name="PerPhotoVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="274">
+              <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowPerPhotoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/src/main/java/com/per/controller/perphoto/ShowPerPhotoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location2.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/location/location2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -110,10 +143,10 @@
       <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="460">
+              <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <marker date="1511339619724" expanded="true" signature="4076:4082" ph="&amp;nbsp;" />
+                <marker date="1511765271429" expanded="true" signature="4103:4109" ph="&amp;nbsp;" />
               </folding>
             </state>
           </provider>
@@ -128,19 +161,15 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Class" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>map.qq.com</find>
-      <find>msg</find>
-      <find>com.mysql.jdbc.Driver</find>
-      <find>entityManagerFactory</find>
-      <find>javax.el</find>
       <find>el</find>
       <find>initsize</find>
       <find>jdbc.initialSize</find>
@@ -162,6 +191,15 @@
       <find>hdel</find>
       <find>coverForm</find>
       <find>search_key</find>
+      <find>photoInfos</find>
+      <find>keyPrefix</find>
+      <find>saveData</find>
+      <find>main.js</find>
+      <find>jquery</find>
+      <find>$</find>
+      <find>js.jsp</find>
+      <find>car2</find>
+      <find>lazyload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,57 +213,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/ConfigUtils.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/per/zookeeper/SoaIndexFactory.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/per/service/AbstractBaseService.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerComment.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/BasePhotoInfoRepository.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerCommentRepository.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/po/perphoto/PerPhotoRepository.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerCommendRoRedisDao.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerCommendRo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/base/BaseTrans.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/system/IdService.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/page/PageVo.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main-console.js" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/include/base-param.jsp" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/menuopen.js" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/per/table/BootstrapTablePageResult.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/main/footer.jsp" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/perphotodata.jsp" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/basephoto.tag" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-security.xml" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-mvc.xml" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/upload/FileUploadController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/api/ComJedisRedis.java" />
         <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/bean/BaseRedisObject.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
         <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
         <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/JedisRedis.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp" />
-        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
-        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp" />
-        <option value="$PROJECT_DIR$/backmanagement/pom.xml" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/redis/pom.xml" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/util/ShardedJedisPoolLoad.java" />
+        <option value="$PROJECT_DIR$/backmanagement/pom.xml" />
         <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/util/TestRedisConn.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/util/ShardedJedisPoolLoad.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoRo2Vo.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/per/util/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java" />
+        <option value="$PROJECT_DIR$/show/pom.xml" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java" />
+        <option value="$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoRo2Vo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main.js" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/config.js" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp" />
+        <option value="$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/test.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/show/src/main/java/com/per/controller/perphoto/ShowPerPhotoController.java" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/js/marry/main.js" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/js/marry/jweixin-1.0.0.js" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/js/marry/tx.js" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/js/marry/init.mix.js" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.lazyload.min.js" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.min.js" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.html" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/css/marry/main.css" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/css/marry/common.css" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/css/marry/index.css" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/css/marry/animate.min.css" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/css/marry/animatev2.css" />
+        <option value="$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.jsp" />
       </list>
     </option>
   </component>
@@ -257,7 +295,7 @@
     </option>
     <option name="enabledProfiles">
       <list>
-        <option value="aliself" />
+        <option value="local" />
         <option value="base" />
       </list>
     </option>
@@ -275,22 +313,8 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="redis" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="redis" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -386,9 +410,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -398,6 +419,302 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="location" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -827,116 +1144,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="backmanagement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -986,44 +1193,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="perphoto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1144,110 +1313,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backmanagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="Errors" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\webapp\WEB-INF\js\jquery" />
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp" />
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF\tags\perphoto" />
+      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF" />
+      <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp" />
       <recent name="D:\bozhi_kuaihe_git\marry\daoTool\src\main\resources" />
       <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\resources\connection" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF\tags\perphoto" />
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF" />
-      <recent name="D:\bozhi_kuaihe_git\marry\show\src\main\resources" />
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\bozhi_kuaihe_git\marry\backmanagement\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.TestRedisConn">
+  <component name="RunManager" selected="Tomcat Server.BeginFront">
     <configuration default="false" name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1897,7 +1998,9 @@
       <workItem from="1511234789832" duration="16583000" />
       <workItem from="1511332726724" duration="10115000" />
       <workItem from="1511400645522" duration="11681000" />
-      <workItem from="1511486636336" duration="5718000" />
+      <workItem from="1511486636336" duration="11863000" />
+      <workItem from="1511746628935" duration="25432000" />
+      <workItem from="1511833472891" duration="17152000" />
     </task>
     <task id="LOCAL-00001" summary="init-redis-finish">
       <created>1508313031755</created>
@@ -1969,11 +2072,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511336458246</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix--后台写了大半">
+      <created>1511502997485</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1511502997485</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227918000" />
+    <option name="totallyTimeSpent" value="276647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2003,18 +2113,18 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.4902439" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5220949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45662847" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20121029" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.4902439" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2041,7 +2151,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="较乱的整理了下，加入了Spring security验证" />
     <MESSAGE value="加了后台上传图片功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="加了后台上传图片功能" />
+    <MESSAGE value="fix--后台写了大半" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix--后台写了大半" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2052,13 +2163,13 @@
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java</url>
+          <line>65</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2067,390 +2178,519 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoService.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/util/SafeEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Protocol.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Connection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="130" column="28" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/BinaryClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="271" column="20" lean-forward="false" selection-start-line="271" selection-start-column="20" selection-end-line="271" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Client.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="224" column="15" lean-forward="false" selection-start-line="224" selection-start-column="15" selection-end-line="224" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/BasePhotoInfoRoRedisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/respository/redis/perphoto/PerPhotoRoRedisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/bean/BaseRedisObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/system/IdService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/AbstractBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="333">
+          <caret line="105" column="15" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="105" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/BasePhotoInfoRo.java">
+    <entry file="file://$PROJECT_DIR$/show/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/BasePhotoInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/spi/JedisRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="58" column="51" lean-forward="true" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/page/PageVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/target/classes/com/per/controller/perphoto/PerPhotoController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/enums/perphoto/ModelType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="193">
+          <caret line="54" column="46" lean-forward="true" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/ro/perphoto/PerPhotoRo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="720">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoRo2Vo.java" />
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/BasePhotoInfoVo2BasePhotoInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/transformer/perphoto/PerPhotoVo2PerPhotoRo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="62" column="36" lean-forward="true" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+        <state relative-caret-position="153">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/old/dist/themes/default/32px.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/iCheck/skins/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/coverTemplateData.tag">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="279">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/tags/perphoto/programStaticElements.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/kindeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1" column="1091" lean-forward="false" selection-start-line="1" selection-start-column="1091" selection-end-line="1" selection-end-column="1091" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/kindeditor-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="13638" column="49" lean-forward="true" selection-start-line="13638" selection-start-column="49" selection-end-line="13638" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/license.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2980">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/themes/qq/editor.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/themes/qq/qq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-640">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/themes/default/background.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/themes/default/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/lang/zh-CN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1958">
+          <caret line="116" column="29" lean-forward="true" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/kindeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/vendors/bootstrap-daterangepicker/daterangepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14312">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <marker date="1504680218183" expanded="true" signature="2965:2976" ph="..." />
+            <marker date="1504680218183" expanded="true" signature="3304:3335" ph="..." />
+            <marker date="1504680218183" expanded="true" signature="3719:3725" ph="&amp;nbsp;" />
+            <marker date="1504680218183" expanded="true" signature="29133:29144" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/main/js.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/console/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/madmin/main/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/controller/perphoto/PerPhotoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="333">
+          <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1041#1042#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1291#1292#0" expanded="false" />
+            <element signature="e#2607#2608#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/ShardedJedisCurdCommonRedisDao.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/spring/application-manage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="11" column="83" lean-forward="false" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/resources/redis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="260">
+          <caret line="130" column="26" lean-forward="true" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/ShardedJedis.class">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="280">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <marker date="1511848011000" expanded="true" signature="22241:22254" ph="..." />
+            <marker date="1511848011000" expanded="true" signature="26514:26526" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/api/ComJedisRedis.java">
+    <entry file="file://$PROJECT_DIR$/daoTool/src/main/java/com/per/dao/po/perphoto/PerPhoto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/util/JedisPoolLoad.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PhotoDataReqVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        <state relative-caret-position="174">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/BasePhotoInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="131" column="14" lean-forward="true" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="14" />
+        <state relative-caret-position="420">
+          <caret line="159" column="5" lean-forward="true" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/resources/META-INF/jedis.xml">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/resources/connection/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/ShardedJedisPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar!/org/apache/commons/pool2/impl/GenericObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/util/Pool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/redis.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar!/org/apache/commons/pool2/impl/LinkedBlockingDeque.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="913" column="40" lean-forward="true" selection-start-line="913" selection-start-column="40" selection-end-line="913" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.4.RELEASE/spring-beans-4.2.4.RELEASE.jar!/org/springframework/beans/factory/support/ConstructorResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="55" column="11" lean-forward="false" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4/httpcore-4.4.jar!/org/apache/http/pool/AbstractConnPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <marker date="1511339619724" expanded="true" signature="4076:4082" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/spi/ShardedJedisRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="360">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/java/com/per/util/TestRedisConn.java">
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/js/jquery/jquery-form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="280">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/com/redis/util/ShardedJedisPoolLoad.java">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/js/jquery-form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backmanagement/pom.xml">
+    <entry file="file://$PROJECT_DIR$/backmanagement/src/main/webapp/WEB-INF/jsp/perphoto/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1511765271429" expanded="true" signature="4103:4109" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/vo/perphoto/PerPhotoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/location/location2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/per/service/perphoto/PerPhotoFrontedServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/java/com/per/controller/perphoto/ShowPerPhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="866" column="15" lean-forward="true" selection-start-line="866" selection-start-column="15" selection-end-line="866" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+            <marker date="1511855529037" expanded="true" signature="35217:35233" ph="..." />
+            <marker date="1511855529037" expanded="true" signature="35250:35256" ph="&amp;nbsp;" />
+            <marker date="1511855529037" expanded="true" signature="36399:36415" ph="..." />
+            <marker date="1511855529037" expanded="true" signature="36432:36438" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/jweixin-1.0.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9630" lean-forward="false" selection-start-line="0" selection-start-column="9630" selection-end-line="0" selection-end-column="9630" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/tx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="702" column="30" lean-forward="true" selection-start-line="702" selection-start-column="30" selection-end-line="702" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/init.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="24474" lean-forward="false" selection-start-line="1" selection-start-column="24474" selection-end-line="1" selection-end-column="24474" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.lazyload.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="3309" lean-forward="false" selection-start-line="1" selection-start-column="3309" selection-end-line="1" selection-end-column="3309" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/js/marry/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="20086" lean-forward="false" selection-start-line="3" selection-start-column="20086" selection-end-line="3" selection-end-column="20086" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="528" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/css/marry/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="433" column="19" lean-forward="true" selection-start-line="433" selection-start-column="19" selection-end-line="433" selection-end-column="19" />
+          <folding>
+            <element signature="e#13351#14538#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/css/marry/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="231" column="22" lean-forward="true" selection-start-line="231" selection-start-column="22" selection-end-line="231" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/css/marry/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12253" lean-forward="false" selection-start-line="0" selection-start-column="12253" selection-end-line="0" selection-end-column="12253" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/css/marry/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/css/marry/animatev2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44342" lean-forward="false" selection-start-line="0" selection-start-column="44342" selection-end-line="0" selection-end-column="44342" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/src/main/webapp/WEB-INF/jsp/perphoto/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>backmanagement:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>backmanagement</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

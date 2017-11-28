@@ -24,7 +24,7 @@
     </tr>
     <tr class="detail-row">
         <td colspan="2">
-            <hp:coverTemplateData element="${element}" fieldNamePrefix="${fieldNamePrefix}elements[${eStatus.index + (startIndex == null ? 0 : startIndex)}]." />
+            <hp:coverTemplateData element="${element}" fieldNamePrefix="${fieldNamePrefix}photoInfos[${eStatus.index + (startIndex == null ? 0 : startIndex)}]." />
         </td>
     </tr>
 

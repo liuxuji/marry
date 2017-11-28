@@ -2,7 +2,6 @@ package com.per.service.perphoto;
 
 import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.common.utils.StringUtils;
-import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.per.dao.po.perphoto.BasePhotoInfo;
 import com.per.dao.po.perphoto.PerPhoto;
@@ -20,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.per.dao.respository.po.perphoto.*;
 import com.per.dao.respository.redis.perphoto.*;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -34,16 +34,17 @@ public class PerPhotoServiceImpl extends AbstractBaseService implements PerPhoto
     @Autowired
     private BasePhotoInfoRepository basePhotoInfoRepository;
     @Autowired
+    private BasePhotoInfoRoRedisDao basePhotoInfoRoRedisDao;
+    @Autowired
     private PerCommentRepository perCommentRepository;
+    @Autowired
+    private PerCommendRoRedisDao perCommendRoRedisDao;
     @Autowired
     private PerPhotoRepository perPhotoRepository;
     @Autowired
-    private BasePhotoInfoRoRedisDao basePhotoInfoRoRedisDao;
-    @Autowired
     private PerPhotoRoRedisDao perPhotoRoRedisDao;
-    @Autowired
-    private PerCommendRoRedisDao perCommendRoRedisDao;
 
+    @Transactional
     @Override
     public void save(PerPhotoVo vo) {
         if(vo == null){
@@ -109,6 +110,7 @@ public class PerPhotoServiceImpl extends AbstractBaseService implements PerPhoto
 
     }
 
+    @Transactional
     @Override
     public void delPhotoData(PhotoDataReqVo vo) {
         perPhotoRepository.delete(vo.getId());
@@ -116,22 +118,21 @@ public class PerPhotoServiceImpl extends AbstractBaseService implements PerPhoto
         if(ro != null){
             String picPath = ro.getPhotoPicPath();
             if(StringUtils.isNotEmpty(picPath)){
-                Long l = perPhotoRoRedisDao.delete(picPath.split(","));
+                perPhotoRoRedisDao.delete(transStringToListLong(picPath));
             }
         }
         perPhotoRoRedisDao.delete(ro.getId());
-
     }
 
     @Override
     public BootstrapTablePageResult findAllPhoto(PageVo vo) {
         BootstrapTablePageResult result = new BootstrapTablePageResult();
         List<PerPhotoRo> list = perPhotoRoRedisDao.findAll();
-        if(CollectionUtils.isEmpty(list)){
-            result.setTotal(0);
-        }else{
+        if(CollectionUtils.isNotEmpty(list)){
             result.setTotal(list.size());
-            result.setRows(list);
+            result.setRows(listObjFieldToString(list,ID));
+        }else{
+            result.setTotal(0);
         }
         return result;
     }
@@ -163,6 +164,7 @@ public class PerPhotoServiceImpl extends AbstractBaseService implements PerPhoto
 
     }
 
+    @Transactional
     @Override
     public void delPhoto(PhotoDataReqVo vo) {
         if(vo == null){

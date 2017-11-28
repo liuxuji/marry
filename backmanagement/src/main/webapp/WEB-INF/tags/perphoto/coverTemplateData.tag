@@ -5,8 +5,12 @@
 <%@taglib prefix="hp" tagdir="/WEB-INF/tags/perphoto" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <div class="form-group">
-    <input type="hidden" name="id" value="${element.id}">
-    <input type="hidden" name="photoId" value="${element.photoId}">
+    <div class="col-md-10">
+        <div class="input-icon">
+            <input type="hidden" name="${fieldNamePrefix}id" value="${element.id}">
+            <input type="hidden" name="${fieldNamePrefix}photoId" value="${element.photoId}">
+        </div>
+    </div>
 </div>
 <div class="form-group">
     <label class="col-md-2 control-label">图片:</label>

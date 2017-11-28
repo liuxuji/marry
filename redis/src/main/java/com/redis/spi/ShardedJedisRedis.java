@@ -123,7 +123,7 @@ public class ShardedJedisRedis implements ComJedisRedis<ShardedJedis> {
             jedis = shardedJedisPool.getResource();
             return jedis.hgetAll(key.getBytes());
         }finally {
-            shardedJedisPool.returnResource(jedis);
+            jedis.close();
         }
     }
 

@@ -1,11 +1,23 @@
+function getCookieByName(name) {
+    var strCookies = document.cookie;
+    var arrCookies = strCookies.split(";");
+    for(var i=0;i<arrCookies.length;i++){
+        var arr=arrCookies[i].split("=");
+        if(name==arr[0]){
+            return arr[1];
+        }
+    }
+    return null;
+}
+
 function cookieMenuStyle()
 {
-	var style = $.cookie('menu_style');
+	var style = getCookieByName("menu_style");
 	return style == null ? "sidebar-default" : style;
 }
 function cookieHeaderStyle()
 {
-	var style = $.cookie('header');
+	var style = getCookieByName('header');
 	return style == null ? "header-fixed" : style;
 }
 $(function () {

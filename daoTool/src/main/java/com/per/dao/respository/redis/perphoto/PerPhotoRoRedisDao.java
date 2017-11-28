@@ -1,8 +1,12 @@
 package com.per.dao.respository.redis.perphoto;
 
+import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.per.dao.ro.perphoto.PerPhotoRo;
 import com.redis.ShardedJedisCurdCommonRedisDao;
 import org.springframework.stereotype.Repository;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created this file:
@@ -29,9 +33,12 @@ public class PerPhotoRoRedisDao extends ShardedJedisCurdCommonRedisDao<PerPhotoR
         return photoUserKey;
     }
 
-    public Long delete(String[] longs){
-        String key = getKeyPrefix();
-        return hdel(key,longs);
+    public void delete(List<Long> longs){
+        if(CollectionUtils.isNotEmpty(longs)){
+            for(Long lo : longs){
+                delete(lo);
+            }
+        }
     }
 
 }

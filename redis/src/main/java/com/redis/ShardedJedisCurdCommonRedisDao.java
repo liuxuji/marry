@@ -42,7 +42,7 @@ import static com.google.common.collect.Lists.newArrayList;
 public class ShardedJedisCurdCommonRedisDao<T extends BaseRedisObject<ID>,ID extends Serializable> extends ShardedJedisRedis {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
-    private static final String SEPARATOR = ".";
+    private static final String SEPARATOR = ":";
     private Class<T> entityClass;
 
     private String keyPrefix = null;
@@ -191,7 +191,7 @@ public class ShardedJedisCurdCommonRedisDao<T extends BaseRedisObject<ID>,ID ext
         if(id == null){
             return null;
         }
-        Map<byte[],byte[]> map = hgetAll(id.toString());
+        Map<byte[],byte[]> map = hgetAll(getKeyByParams(id));
         if(MapUtils.isEmpty(map)){
             return null;
         }

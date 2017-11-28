@@ -13,11 +13,12 @@ public class TestRedisConn {
     public static void main(String[] args){
         try {
 //            String host = "39.106.108.35";//控制台显示访问地址
-            String host ="r-2ze2e9393cda3bb4.redis.rds.aliyuncs.com";
+//            String host ="r-2ze2e9393cda3bb4.redis.rds.aliyuncs.com";
+            String host ="127.0.0.1";
             int port = 6379;
             Jedis jedis = new Jedis(host, port);
 //鉴权信息
-            jedis.auth("XXB19890501lxj");//password
+//            jedis.auth("xxb19890501lovelxj19910412");//password
 //            jedis.auth("WwwRedis1919Pro");
             String key = "redis";
             String value = "aliyun-redis";
