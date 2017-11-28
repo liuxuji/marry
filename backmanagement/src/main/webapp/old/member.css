@@ -1,0 +1,292 @@
+td {
+	font-size: 12px;
+	font-family: "Tahoma","Verdana","SIMKAI", "MS Shell Dlg", "Tahoma";
+	line-height: 140%;
+	color: #000000;
+} 
+.text {
+	font-size: 12px;
+	font-family: "Tahoma","Verdana","SIMKAI", "MS Shell Dlg", "Tahoma";
+}
+a:link {color: #0C6DCE; text-decoration:none;} 
+a:visited {color: #0C6DCE; text-decoration: none;} 
+a:hover {color: #FF0000; text-decoration: none;}
+a:active {color:#0C6DCE;text-decoration:none;}
+
+a:link.title {color:#ffffff;text-decoration:none} 
+a:visited.title {color:#ffffff;text-decoration:none}
+a:hover.title {color:#FF0000;text-decoration:none}
+a:active.title {color:#ffffff;text-decoration:none}
+
+a:link.formap {color:#000000;text-decoration:none;font-size:12px;} 
+a:visited.formap {color:#000000;text-decoration:none;font-size:12px;}
+a:hover.formap {color:#FF0000;text-decoration:none;font-size:12px;}
+a:active.formap {color:#000000;text-decoration:none;font-size:12px;}
+
+
+
+.yourPosition {PADDING-LEFT: 10px; PADDING-BOTTOM: 2px; COLOR: #000000; PADDING-TOP: 2px;}
+
+.banner-td-left {background-image: url('banner_z.gif');}
+.banner-td-center {font-size:14px; color:#ffffff;background-image: url('banner_d.gif');padding-left:30px}
+.banner-td-right {background-image: url('banner_y.gif');}
+
+.bottom-td-left {background-image: url('bottom_z.gif');}
+.bottom-td-center {font-size:9px; color:#ffffff;background-image: url('bottom_d.gif');}
+.bottom-td-right {background-image: url('bottom_y.gif');}
+
+.buttons-td_left {background-image: url('title1_z.gif');}
+.buttons-td_center {font-size:14px; color:#ffffff;background-image: url('title1_d.gif');}
+.buttons-td_right {background-image: url('title1_y.gif');}
+
+.Frame01-left-top {background-image: url('k1_z_s.gif');}
+.Frame01-top {background-color:#f2f2e8;}
+.Frame01-right-top {background-image: url('k1_y_s.gif');}
+.Frame01-left {background-color:#f2f2e8;}
+.Frame01-center {background-color:#f2f2e8;}
+.Frame01-right {background-color:#f2f2e8;}
+.Frame01-left-bottom {background-image: url('k1_z_x.gif');}
+.Frame01-bottom {background-color:#f2f2e8;}
+.Frame01-right-bottom {background-image: url('k1_y_x.gif');}
+
+.Frame02-left-top {background-image: url('k2_z_s.gif');}
+.Frame02-top {background-image: url('k2_s.gif');}
+.Frame02-right-top {background-image: url('k2_y_s.gif');}
+.Frame02-left {background-image: url('k2_z.gif');}
+.Frame02-center {background-color:#ffffff;}
+.Frame02-right {background-image: url('k2_y.gif');}
+.Frame02-left-bottom {background-image: url('k2_z_x.gif');}
+.Frame02-bottom {background-image: url('k2_x.gif');}
+.Frame02-right-bottom {background-image: url('k2_y_x.gif');}
+
+.Frame03-left-top {background-image: url('k3_z_s.gif');}
+.Frame03-top {background-image: url('k3_s.gif');}
+.Frame03-right-top {background-image: url('k3_y_s.gif');}
+
+
+
+.icon {};
+
+.titlehead-left {background-image: url('title1_z.gif');}
+.titlehead-center {background-image: url('title1_d.gif');font-size:14px;text-align:center}
+.titlehead-right {background-image: url('title1_y.gif');}
+a.titlehead:link {color: #ffffff; text-decoration:none;font-size:14px;} 
+a.titlehead:visited {color: #ffffff; text-decoration: none;font-size:14px;} 
+a.titlehead:hover {color: #FF0000; text-decoration: none;font-size:14px;}
+a.titlehead:active {color:#ffffff;text-decoration:none;font-size:14px;}
+
+.tab0 {
+  width:100px;
+  background-image: url('tab0.gif');
+  COLOR: white;
+  font-size:14px;
+  text-align: center;
+  padding-top:5px;
+}
+
+.tab1 {
+  width:100px;
+  background-image: url('tab1.gif');
+  font-size:14px;
+  text-align: center;
+  padding-top:5px;
+}
+
+
+.mainContent{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.navigation{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.navigation td{
+	font-size:14px;
+	empty-cells:show;
+	/*border-bottom: 1px solid #CBCBCB;*/
+}
+
+
+.title {
+	font-size: 14px; 
+	background: none repeat scroll 0 0 #BBBBBB;
+} 
+
+.contenttable {
+	 border: 1px solid #CBCBCB;
+}
+
+.contenttable th{
+    font-size:14px;
+    height:25px;
+	background: none repeat scroll 0 0 #E4E4E4;
+	padding-top: 3px;
+	padding-left: 5px;
+	font-weight:normal;
+	text-align: left;
+	
+}
+
+.contenttable tr.r0{
+	background-color:#FAFAF6;
+}
+
+.contenttable tr.r1{
+	background-color:#FFFFFF;
+}
+
+.contenttable td{
+	border-top: 1px solid #CBCBCB;
+	padding-left:5px;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-size:12px;
+	vertical-align: middle;
+	empty-cells:show;
+}
+
+
+.contenttable input,select,textarea{
+
+}
+
+
+
+
+.infotable {
+	 border-bottom: 1px solid #CBCBCB;
+	 border-left: 1px solid #CBCBCB;
+	 border-right: 1px solid #CBCBCB;
+}
+
+.infotable th{
+    font-size:14px;
+    height:25px;
+	background: none repeat scroll 0 0 #E4E4E4;
+	padding-top: 3px;
+	padding-left: 5px;
+	font-weight:normal;
+	text-align: left;
+}
+
+.infotable td{
+	height:30px;
+	border-top: 1px solid #CBCBCB;
+	padding-left:15px;
+	padding-right:15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	font-size:12px;
+	empty-cells:show;
+}
+
+.tdlabel{
+  background-color:#FAFAF6;
+  text-align: right;
+  font-weight:bold;
+}
+
+.tdbutton{
+  height:30px;
+  background-color:#FAFAF6;
+  text-align: center;
+  background: none repeat scroll 0 0 #E4E4E4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.infotable input,select,textarea{
+	 border: 1px solid #CBCBCB;
+}
+
+
+.infotable td.no{
+    border: 0px;
+	 height:20px;
+	 padding:0px;
+}
+
+label.error {
+    color: red;
+    font-style: italic;
+}
+
+.buttonOn {
+	font-size: 12px;
+}
+
+
+form {
+	MARGIN: 0px
+}
+
+.button-td {background-image: url('k3_s.gif');}
+
+
+
+.divtoggleicon {margin:0 auto; background: url('plus.gif') no-repeat center;height:20px;width:20px;cursor: pointer;}
+.open {margin:0 auto; background:  url('minus.gif') no-repeat center;;height:20px;width:20px;cursor: pointer;}
+
+
+
+
+
+.VEtitleStyle
+{
+font-family:Verdana;
+font-size:12pt;
+font-weight:bold;
+}
+.VEiconStyle
+{
+position:relative;
+top:6px;
+left:6px;
+}
+.VEdetailsStyle
+{
+font-family:Verdana;
+font-size:10pt;
+font-weight:normal;
+text-align:left;
+color:white;
+}
+
+.VEFlagtitleStyle
+{
+font-family:Verdana;
+font-size:12pt;
+font-weight:bold;
+}
+.VEFlagiconStyle
+{
+position:relative;
+top:10px;
+left:10px;
+}
+.VEFlagdetailsStyle
+{
+font-family:Verdana;
+font-size:10pt;
+font-weight:normal;
+text-align:left;
+color:white;
+}
+
+
+
+.contenttable tr.checkstatus1{
+	background-color:#FAFAF6;
+}
+
+.contenttable tr.checkstatus0{
+	background-color:#a0c0ff;
+} 
+
+.contenttable tr.checkstatus-1{
+	background-color:#ffa0a0;
+}
+
